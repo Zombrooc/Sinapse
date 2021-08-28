@@ -2,9 +2,7 @@ import React from "react";
 import Head from "next/head";
 // import Navbar from "../components/Navbar";
 
-import { Container } from "../styles/pages/home.styles";
-
-import SinapseLogo from '../assets/images/sinapseLogo.png';
+import { Container } from "../styles/pages/itsnear.styles";
 
 export default function Home() {
   return (

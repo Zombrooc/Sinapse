@@ -1,32 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
+    padding: 10px  5%;    
+`;
 
-  width: 100vw;
+
+export const FirstBlock = styled.div`
+  display: grid;
+
+  grid-template-columns: repeat(2, 50%);
+
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
 
-  padding: 25px 10%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: var(--color-light);
-  text-align: center;
-
-
-  h1 {
-    font-size: 4em;
-  }
-
-  hr {
-    width: 90%;
-  }
-
-  p {
-    font-size: 2em;
-  }
+  background-repeat: no-repeat;
 `;
