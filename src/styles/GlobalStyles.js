@@ -14,7 +14,7 @@ export default createGlobalStyle`
     --persian-blue: #0D31BCff;
     --blue-green: #2093BCff;
 
-    font-family: "Nunito", sans-serif;
+    font-family: "Nunito",  ---apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
   }
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   width: 100%;
   height: 65px;
-  background: var(--color-dark);
+  background: var(--color-light);
   display: flex;
 
   z-index: 4444;
@@ -16,7 +16,8 @@ export const Nav = styled.nav`
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
   margin: 0.5rem 7rem;
   flex-wrap: wrap;
@@ -34,9 +35,9 @@ export const Container = styled.div`
 export const Title = styled.div`
 
   img {
-    /* margin: 0 !important; */
+    margin: 0 !important;
     
-    width: 15rem;
+    width: 20%;
   }
 
   @media screen and (max-width: 961px) {

@@ -1,37 +1,38 @@
-import React, { useState, useEffect } from "react";
-import { signIn, signOut, useSession } from "next-auth/client";
+import React from 'react';
+// import React, { useState, useEffect } from "react";
+// import { signIn, signOut, useSession } from "next-auth/client";
 import Link from "next/link";
-import { MdClose, MdMenu } from "react-icons/md";
+// import { MdClose, MdMenu } from "react-icons/md";
 
-import useWindowSize from "../useWindowSize.js";
+// import useWindowSize from "../useWindowSize.js";
 
-import logoWithoutTagline from '../../assets/images/logoWithoutTagline.svg';
+import synapseTinyLogo from '../../assets/images/Tiny_Logo_Sinapse__1_-removebg-preview.png';
 
 import {
   Nav,
   Container,
   Title,
-  Menu,
-  MenuItem,
-  ToggleButton,
-  CloseIcon,
+  // Menu,
+  // MenuItem,
+  // ToggleButton,
+  // CloseIcon,
 } from "./styles";
 
 function Navbar() {
-  const [menuStatus, setMenuStatus] = useState(false);
-  const [session, loading] = useSession();
+  // const [menuStatus, setMenuStatus] = useState(false);
+  // const [session, loading] = useSession();
 
-  const size = useWindowSize();
+  // const size = useWindowSize();
 
-  const menuHandler = () => {
-    setMenuStatus(!menuStatus);
-  };
+  // const menuHandler = () => {
+  //   setMenuStatus(!menuStatus);
+  // };
 
-  useEffect(() => {
-    if (size.width >= 960) {
-      setMenuStatus(false);
-    }
-  }, [size.width]);
+  // useEffect(() => {
+  //   if (size.width >= 960) {
+  //     setMenuStatus(false);
+  //   }
+  // }, [size.width]);
 
   return (
     <Nav>
@@ -39,11 +40,11 @@ function Navbar() {
         <Title>
           <Link href="/">
             <a>
-              <img src={logoWithoutTagline} alt="The Simple TECH"/>
+              <img src={synapseTinyLogo} alt="Sinapse - Concursos"/>
             </a>
           </Link>
         </Title>
-        <ToggleButton onClick={menuHandler}>
+        {/* <ToggleButton onClick={menuHandler}>
           {!menuStatus && <MdMenu />}
         </ToggleButton>
         <Menu isOpen={menuStatus}>
@@ -81,7 +82,7 @@ function Navbar() {
               <a className="active"><strong>Solicitar Assistêcia Técnica</strong></a>
             </Link>
           </MenuItem>
-        </Menu>
+        </Menu> */}
       </Container>
     </Nav>
   );
