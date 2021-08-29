@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   color: var(--color-light);
 
-  position: absolute;
+  position: fixed;
   top: 70px;
   right: 15px;
   border-radius: 15px;
