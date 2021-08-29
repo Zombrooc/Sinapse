@@ -50,10 +50,7 @@ export default class MyDocument extends Document {
 
           {/* Primary Meta Tags */}
           <meta name="language" content="pt" />
-          <meta
-            name="description"
-            content="Sinapse Concursos."
-          />
+          <meta name="description" content="Sinapse Concursos." />
           <meta name="robots" content="all" />
           <meta
             name="keywords"
@@ -62,8 +59,11 @@ export default class MyDocument extends Document {
 
           {/* Open Graph / Facebook */}
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://sinapse.thesimpletech.com.br" />
-          <meta property="og:title" content="The Simple" />
+          <meta
+            property="og:url"
+            content="https://sinapse.thesimpletech.com.br"
+          />
+          <meta property="og:title" content="Sinapse Concursos" />
           <meta
             property="og:description"
             content="The Simple é uma empresa para quem busca rápidas soluções de informática. Trabalhamos com reparo de computadores, criação de sites, aulas particulares e +."
@@ -75,8 +75,11 @@ export default class MyDocument extends Document {
 
           {/* Twitter */}
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://sinapse.thesimpletech.com.br" />
-          <meta property="twitter:title" content="The Simple" />
+          <meta
+            property="twitter:url"
+            content="https://sinapse.thesimpletech.com.br"
+          />
+          <meta property="twitter:title" content="Sinapse Concursos" />
           <meta
             property="twitter:description"
             content="The Simple é uma empresa para quem busca rápidas soluções de informática. Trabalhamos com reparo de computadores, criação de sites, aulas particulares e +."
@@ -133,6 +136,13 @@ export default class MyDocument extends Document {
           <meta
             name="msapplication-TileImage"
             content="/images/mstile-144x144.png"
+          />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,700&family=Roboto:ital,wght@0,300;0,400;1,500;1,700&display=swap"
+            rel="stylesheet"
           />
         </Head>
         <body>

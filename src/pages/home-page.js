@@ -30,7 +30,7 @@ export default function Home() {
               <br />e ganhe{" "}
               <span className="highlight">
                 <strong>
-                  <em>R$4.300,00</em>
+                  <em>R$4.632,00</em>
                 </strong>
               </span>
               p/ mês
