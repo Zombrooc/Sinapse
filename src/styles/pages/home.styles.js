@@ -101,7 +101,7 @@ export const Column = styled.div`
       height: 100%;
 
       .left-container {
-        padding-top: 40px;
+        padding-top: 90px;
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 15px;
