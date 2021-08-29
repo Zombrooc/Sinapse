@@ -15,7 +15,12 @@ import {
 import SuccessMessage from "../components/SuccessMessage";
 
 export default function Home() {
-  const [inputData, setInputData] = useState();
+  const [inputData, setInputData] = useState({
+    name: "",
+    email: "",
+    whatsapp: "",
+    dreamCareer: "defaultCarrer",
+  });
   const [showMessage, setShowMessage] = useState(false);
 
   const handleInput = (event) => {
@@ -30,14 +35,20 @@ export default function Home() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    setShowMessage(true);
+    setInputData({
+      name: "",
+      email: "",
+      whatsapp: "",
+      dreamCareer: "defaultCarrer",
+    });
+
     const response = await axios.post(
       "https://formcarry.com/s/2v8SfOenpeD",
       inputData
     );
 
-    if(response.status === 200) {
-      setShowMessage(true);
-
+    if (response.status === 200) {
       setTimeout(() => {
         setShowMessage(false);
       }, 6000);
@@ -94,6 +105,7 @@ export default function Home() {
                   name="name"
                   placeholder="Digite seu nome"
                   onChange={handleInput}
+                  value={inputData?.name}
                   required
                 />
               </div>
@@ -104,6 +116,7 @@ export default function Home() {
                   name="email"
                   placeholder="Digite seu E-mail"
                   onChange={handleInput}
+                  value={inputData?.email}
                   required
                 />
               </div>
@@ -114,6 +127,7 @@ export default function Home() {
                   name="whatsapp"
                   placeholder="Digite seu WhatsApp"
                   onChange={handleInput}
+                  value={inputData?.whatsapp}
                   required
                 />
               </div>
@@ -122,8 +136,9 @@ export default function Home() {
                 <select
                   name="dreamCareer"
                   onChange={handleInput}
+                  value={inputData?.dreamCareer}
                 >
-                  <option defaultValue disabled value="selectACareer">
+                  <option defaultValue disabled value="defaultCarrer">
                     {" "}
                     Selecione a carreira dos seus sonhos{" "}
                   </option>
