@@ -97,6 +97,21 @@ export const Column = styled.div`
       }
     }
   }
+  @media screen and (max-width: 768px) {
+      height: 100%;
+
+      .left-container {
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+      }
+
+      .right-container {
+        justify-content:  center;
+      }
+    }
 `;
 
 export const FirstBlock = styled.div``;
+
