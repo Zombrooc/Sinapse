@@ -5,13 +5,9 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 
 import brazillianSoldiers from "../assets/images/brazillian_soldiers.png";
+import soldier from "../assets/images/soldierPNG.png";
 
-import {
-  Container,
-  GridContainer,
-  FirstBlock,
-  Column,
-} from "../styles/pages/home.styles";
+import { Container, GridContainer, Column } from "../styles/pages/home.styles";
 import SuccessMessage from "../components/SuccessMessage";
 
 export default function Home() {
@@ -65,7 +61,7 @@ export default function Home() {
       <SuccessMessage show={showMessage} />
 
       <GridContainer style={{ backgroundImage: `url(${brazillianSoldiers})` }}>
-        <Column style={{ flexDirection: "column" }}>
+        <Column style={{ flexDirection: "column" }} className="height-100vh">
           <div className="left-container">
             <p>
               Seja aprovado para a<br />
@@ -89,7 +85,7 @@ export default function Home() {
             </p>
           </div>
         </Column>
-        <Column>
+        <Column className="height-100vh" style={{ alignItems: "flex-end" }}>
           <div className="right-container">
             <p>
               {" "}
@@ -147,6 +143,10 @@ export default function Home() {
                   <option value="Polícia Civíl"> Polícia Civíl </option>
                   <option value="Corpo de Bombeiro"> Corpo de Bombeiro </option>
                   <option value="Polícia Penal"> Polícia Penal </option>
+                  <option value="Exército Brasileiro">
+                    {" "}
+                    Exército Brasileiro{" "}
+                  </option>
                 </select>{" "}
               </div>
               <input type="hidden" name="_gotcha" />
@@ -158,7 +158,36 @@ export default function Home() {
         </Column>
       </GridContainer>
 
-      <FirstBlock></FirstBlock>
+      <GridContainer
+        style={{
+          gridTemplateColumns: "30% 70%",
+          padding: "0 40px 0 40px",
+          background: "var(--color-dark)",
+          borderRadius: " 0 0 100px 100px",
+        }}
+        id="secondSection"
+      >
+        <Column>
+          <img src={soldier} style={{ maxWidth: "100%" }} />
+        </Column>
+        <Column
+          style={{
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: '30px'
+          }}
+        >
+          <p>
+            {" "}
+            A formação que você precisa para passa nos concursos publicos da
+            atualidade.
+          </p>
+          <p>
+            A estabilidade financeira nunca esteve tão perto de você como agora.
+          </p>
+        </Column>
+      </GridContainer>
     </Container>
   );
 }

@@ -59,8 +59,10 @@ export default createGlobalStyle`
   body {
     color: var(--color-dark);
     /* background: var(--color-light); */
-    background: rgb(73,18,145);
-    background: linear-gradient(121deg, rgba(73,18,145,1) 0%, rgba(60,52,164,1) 18%, rgba(22,155,222,1) 75%, rgba(0,212,255,1) 100%);
+    /* background: rgb(73,18,145);
+    background: linear-gradient(121deg, rgba(73,18,145,1) 0%, rgba(60,52,164,1) 18%, rgba(22,155,222,1) 75%, rgba(0,212,255,1) 100%); */
+
+    background: var(--color-light);
     -webkit-font-smoothing: antialiased !important;
   }
 
@@ -131,5 +133,9 @@ export default createGlobalStyle`
 
   button:hover {
     background-color: #2e2e2e;
+  }
+
+  .height-100vh {
+    height: 100vh;
   }
 `;

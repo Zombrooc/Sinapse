@@ -18,21 +18,29 @@ export const GridContainer = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+
+  &#secondSection {
+    p {
+      font-size: 29px;
+      font-weight: 700;
+    }
+  }
 `;
 
 export const Column = styled.div`
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--color-light);
 
   &:nth-child(2) {
-    align-items: flex-end;
   }
 
   div.left-container {
+
+    padding: 20px;
+
     p {
       font-size: 35px;
 
@@ -112,6 +120,3 @@ export const Column = styled.div`
       }
     }
 `;
-
-export const FirstBlock = styled.div``;
-

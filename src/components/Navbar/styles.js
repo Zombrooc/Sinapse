@@ -33,14 +33,22 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.div`
+  a {
+    //Remover esses elementos depois
+    width: 100%;
 
-  img {
-    margin: 0 !important;
-    
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 0 !important;
+
+      width: 20%;
+    }
   }
 
-  @media screen and (max-width: 961px) {
+  /* @media screen and (max-width: 961px) {
     width: 50%;
   }
 
@@ -48,7 +56,7 @@ export const Title = styled.div`
     img {
       width: 10rem;
     }
-  }
+  } */
 `;
 
 export const Menu = styled.div`
@@ -141,7 +149,6 @@ export const MenuItem = styled.div`
 
     a {
       color: var(--color-light) !important;
-
     }
   }
 `;
