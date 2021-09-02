@@ -164,6 +164,7 @@ export default function Home() {
         <Column>
           <img src={soldier} />
         </Column>
+        <div></div>
         <Column
           style={{
             flexDirection: "column",
@@ -174,7 +175,7 @@ export default function Home() {
         >
           <p>
             {" "}
-            A formação que você precisa para passa nos concursos publicos da
+            A formação que você precisa para passar nos concursos públicos da
             atualidade.
           </p>
           <p>

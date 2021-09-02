@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
 
-          <script
+          {/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-194908872-1"
           ></script>
@@ -46,7 +46,7 @@ export default class MyDocument extends Document {
         gtag('config', 'UA-194908872-1');
         `,
             }}
-          />
+          /> */}
 
           {/* Primary Meta Tags */}
           <meta name="language" content="pt" />

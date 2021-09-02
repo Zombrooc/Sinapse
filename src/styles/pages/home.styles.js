@@ -36,8 +36,31 @@ export const GridContainer = styled.div`
       font-weight: 700;
     }
 
+    & div:nth-child(2) {
+      display: none;
+    }
+
     @media screen and (max-width: 768px){
       grid-template-columns: 1fr !important;
+      position: relative;
+      border-radius: 0;
+
+      div:nth-child(2) {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(40, 42, 54, .6);
+      }
+
+      div:nth-child(3){
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+      }
     }
   }
 `;
