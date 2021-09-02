@@ -159,16 +159,10 @@ export default function Home() {
       </GridContainer>
 
       <GridContainer
-        style={{
-          gridTemplateColumns: "30% 70%",
-          padding: "0 40px 0 40px",
-          background: "var(--color-dark)",
-          borderRadius: " 0 0 100px 100px",
-        }}
         id="secondSection"
       >
         <Column>
-          <img src={soldier} style={{ maxWidth: "100%" }} />
+          <img src={soldier} />
         </Column>
         <Column
           style={{

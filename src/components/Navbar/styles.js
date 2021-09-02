@@ -8,9 +8,9 @@ export const Nav = styled.nav`
 
   z-index: 4444;
 
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
 `;
 
 export const Container = styled.div`

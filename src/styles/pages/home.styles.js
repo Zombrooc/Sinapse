@@ -7,6 +7,7 @@ export const Container = styled.div`
 export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,9 +21,23 @@ export const GridContainer = styled.div`
   }
 
   &#secondSection {
+    grid-template-columns: 30% 70%;
+    padding: 0 40px 0 40px;
+    background: var(--color-dark);
+    border-radius: 0 0 100px 100px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+
     p {
       font-size: 29px;
       font-weight: 700;
+    }
+
+    @media screen and (max-width: 768px){
+      grid-template-columns: 1fr !important;
     }
   }
 `;
@@ -38,7 +53,6 @@ export const Column = styled.div`
   }
 
   div.left-container {
-
     padding: 20px;
 
     p {
@@ -106,17 +120,17 @@ export const Column = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-      height: 100%;
+    height: 100%;
 
-      .left-container {
-        padding-top: 90px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-      }
-
-      .right-container {
-        justify-content:  center;
-      }
+    .left-container {
+      padding-top: 90px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
     }
+
+    .right-container {
+      justify-content: center;
+    }
+  }
 `;
