@@ -144,6 +144,13 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,700&family=Roboto:ital,wght@0,300;0,400;1,500;1,700&display=swap"
             rel="stylesheet"
           />
+
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+          />
+
+          <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         </Head>
         <body>
           <Main />

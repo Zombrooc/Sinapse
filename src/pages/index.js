@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import axios from "axios";
 
@@ -7,7 +7,16 @@ import Navbar from "../components/Navbar";
 import brazillianSoldiers from "../assets/images/brazillian_soldiers.png";
 import soldier from "../assets/images/soldierPNG.png";
 
-import { Container, GridContainer, Column } from "../styles/pages/home.styles";
+import elian1 from "../assets/images/contributorsProfilePics/elian.jpg";
+import elian2 from "../assets/images/contributorsProfilePics/elian2.jpg";
+import elian3 from "../assets/images/contributorsProfilePics/elian3.jpeg";
+
+import {
+  Container,
+  GridContainer,
+  Column,
+  Slider,
+} from "../styles/pages/home.styles";
 import SuccessMessage from "../components/SuccessMessage";
 
 export default function Home() {
@@ -18,6 +27,22 @@ export default function Home() {
     dreamCareer: "defaultCarrer",
   });
   const [showMessage, setShowMessage] = useState(false);
+
+  useEffect(() => {
+    var swiper = new Swiper(".blog-slider", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: ".blog-slider__pagination",
+        clickable: true,
+      },
+    });
+  }, []);
 
   const handleInput = (event) => {
     const target = event.target.name;
@@ -55,6 +80,12 @@ export default function Home() {
     <Container>
       <Head>
         <title>Sinapse Concursos</title>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       </Head>
       <Navbar />
 
@@ -158,9 +189,7 @@ export default function Home() {
         </Column>
       </GridContainer>
 
-      <GridContainer
-        id="secondSection"
-      >
+      <GridContainer id="secondSection">
         <Column>
           <img src={soldier} />
         </Column>
@@ -170,7 +199,7 @@ export default function Home() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            padding: '30px'
+            padding: "30px",
           }}
         >
           <p>
@@ -183,6 +212,86 @@ export default function Home() {
           </p>
         </Column>
       </GridContainer>
+      <Slider>
+        <div className="blog-slider">
+          <div className="blog-slider__wrp swiper-wrapper">
+            <div className="blog-slider__item swiper-slide">
+              <div className="blog-slider__img">
+                <img src={elian2} alt="" />
+              </div>
+              <div className="blog-slider__content">
+                <div className="blog-slider__title">
+                  Elian Valdez V. L. Gonçalo
+                </div>
+                <span className="blog-slider__code">
+                  CEO & CTO da The Simple TECH &bull; Professor de Informática
+                  &bull; Desenvolvedor FullStack{" "}
+                </span>
+                <div className="blog-slider__text">
+                  Nosso professor de informática tem mais de 4 anos de
+                  experiência na área tendo se formado em 2018 como técnico de
+                  informática em 2018, logo depois começando como professor na
+                  cidade de Três Corações. Desenvolvedor e proprietário na
+                  empresa The Simple TECH.
+                </div>
+                {/* <a href="#" className="blog-slider__button">
+                  READ MORE
+                </a> */}
+              </div>
+            </div>
+            <div className="blog-slider__item swiper-slide">
+              <div className="blog-slider__img">
+                <img src={elian1} alt="" />
+              </div>
+              <div className="blog-slider__content">
+                <div className="blog-slider__title">
+                  Elian Valdez V. L. Gonçalo
+                </div>
+                <span className="blog-slider__code">
+                  CEO & CTO da The Simple TECH &bull; Professor de Informática
+                  &bull; Desenvolvedor FullStack{" "}
+                </span>
+                <div className="blog-slider__text">
+                  Nosso professor de informática tem mais de 4 anos de
+                  experiência na área tendo se formado em 2018 como técnico de
+                  informática em 2018, logo depois começando como professor na
+                  cidade de Três Corações. Desenvolvedor e proprietário na
+                  empresa The Simple TECH.
+                </div>
+                {/* <a href="#" className="blog-slider__button">
+                  READ MORE
+                </a> */}
+              </div>
+            </div>
+            <div className="blog-slider__item swiper-slide">
+              <div className="blog-slider__img">
+                <img src={elian3} alt="" />
+              </div>
+              <div className="blog-slider__content">
+                <div className="blog-slider__title">
+                  Elian Valdez V. L. Gonçalo
+                </div>
+                <span className="blog-slider__code">
+                  CEO & CTO da The Simple TECH &bull; Professor de Informática
+                  &bull; Desenvolvedor FullStack{" "}
+                </span>
+                <div className="blog-slider__text">
+                  Nosso professor de informática tem mais de 4 anos de
+                  experiência na área tendo se formado em 2018 como técnico de
+                  informática em 2018, logo depois começando como professor na
+                  cidade de Três Corações. Desenvolvedor e proprietário na
+                  empresa The Simple TECH.
+                </div>
+                {/* <a href="#" className="blog-slider__button">
+                  READ MORE
+                </a> */}
+              </div>
+            </div>
+            
+          </div>
+          <div className="blog-slider__pagination"></div>
+        </div>
+      </Slider>
     </Container>
   );
 }
