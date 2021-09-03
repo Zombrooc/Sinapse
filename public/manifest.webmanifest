@@ -1,6 +1,6 @@
 {
-    "name": "Sinapse",
-    "short_name": "Sinapse",
+    "name": "Sinapse Concursos",
+    "short_name": "Sinapse Concursos",
     "icons": [
         {
             "src": "/android-chrome-36x36.png",
@@ -38,7 +38,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#241f1f",
-    "background_color": "#241f1f",
+    "theme_color": "#f0f0f0",
+    "background_color": "#f0f0f0",
+    "start_url": "https://sinapse.thesimpletech.com.br/",
     "display": "standalone"
 }
