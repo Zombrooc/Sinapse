@@ -8,6 +8,7 @@ import brazillianSoldiers from "../assets/images/brazillian_soldiers.png";
 import soldier from "../assets/images/soldierPNG.png";
 import elian2 from "../assets/images/contributorsProfilePics/elian2.jpg";
 import joaoPedro from "../assets/images/contributorsProfilePics/joaoPedro.jpeg";
+import joseWilson from "../assets/images/contributorsProfilePics/joseWilson.jpeg";
 
 import {
   Container,
@@ -252,6 +253,28 @@ export default function Home() {
                   Fundador da Sinapse &bull; Professor de Informática &bull;
                   Formado em Marketing e Vendas &bull; Músico &bull; Designer
                   Gráfico &bull; Editor de Vídeos &bull; Criador de Conteúdo
+                </span>
+                <div className="blog-slider__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                  nesciunt porro labore unde nulla quos veniam tempora quis.
+                  Unde, quae libero. Magni soluta aut temporibus deserunt ipsa?
+                  Unde, iusto id.
+                </div>
+                {/* <a href="#" className="blog-slider__button">
+                  READ MORE
+                </a> */}
+              </div>
+            </div>
+            <div className="blog-slider__item swiper-slide">
+              <div className="blog-slider__img">
+                <img src={joseWilson} alt="" />
+              </div>
+              <div className="blog-slider__content">
+                <div className="blog-slider__title">José Wilson</div>
+                <span className="blog-slider__code">
+                  Formado em Direito pela faculdade de Direito de Varginha
+                  &bull; Pós graduado em Direito civil e empresarial &bull;
+                  Policial Militar desde 2016
                 </span>
                 <div className="blog-slider__text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
