@@ -250,7 +250,8 @@ export default function Home() {
                 <div className="blog-slider__title">João Pedro</div>
                 <span className="blog-slider__code">
                   Fundador da Sinapse &bull; Professor de Informática &bull;
-                  Formado em Marketing e Vendas
+                  Formado em Marketing e Vendas &bull; Músico &bull; Designer
+                  Gráfico &bull; Editor de Vídeos &bull; Criador de Conteúdo
                 </span>
                 <div className="blog-slider__text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
