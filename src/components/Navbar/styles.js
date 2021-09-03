@@ -8,6 +8,8 @@ export const Nav = styled.nav`
 
   z-index: 4444;
 
+  /* padding: 0.5rem 7rem; */
+
   /* position: fixed;
   top: 0;
   left: 0; */
@@ -19,7 +21,7 @@ export const Container = styled.div`
   /* justify-content: space-between; */
   justify-content: center;
   align-items: center;
-  margin: 0.5rem 7rem;
+  /* margin: 0.5rem 7rem; */
   flex-wrap: wrap;
   overflow: hidden;
 

@@ -4,9 +4,7 @@ import axios from "axios";
 
 import Navbar from "../components/Navbar";
 
-import soldierFirstBlock from "../assets/images/Soldier.png";
-import brazillianSoldiers from "../assets/images/brazillian_soldiers.png";
-import banner from "../assets/images/banner.png";
+import firstBlockBG from "../assets/images/firstBlockBG.png";
 import policeCareer from "../assets/images/policeCareer.png";
 
 import soldier from "../assets/images/soldierPNG.png";
@@ -96,14 +94,11 @@ export default function Home() {
 
       <SuccessMessage show={showMessage} />
 
-      <GridContainer style={{ backgroundImage: `url(${soldierFirstBlock})` }}>
-        <Column style={{ flexDirection: "column" }} className="height-100vh">
-          <div className="left-container" style={{textAlign: 'center'}}>
-            <img
-              src={policeCareer}
-                style={{ width: "50%" }}
-            />
-            <p style={{textAlign: 'left'}}>
+      <GridContainer style={{ backgroundImage: `url(${firstBlockBG})` }}>
+        <Column style={{ flexDirection: "column" }} >
+          <div className="left-container" style={{ textAlign: "center" }}>
+            <img src={policeCareer} style={{ width: "90%" }} />
+            <p style={{ textAlign: "left" }}>
               Seja aprovado para a<br />
               <strong>
                 <em>Polícia Penal - MG</em>
@@ -116,7 +111,7 @@ export default function Home() {
               </span>
               p/ mês
             </p>
-            <p style={{textAlign: 'left'}}>
+            <p style={{ textAlign: "left" }}>
               <strong>
                 Estudar para um concurso
                 <br />
@@ -302,11 +297,10 @@ export default function Home() {
               <div className="blog-slider__content">
                 <div className="blog-slider__title">Marcus Carelli</div>
                 <span className="blog-slider__code">
-                  Formado em Direito pela faculdade de Direito de Varginha
-                  &bull; Pós graduado em Direito civil e empresarial &bull;
-                  Especialista em Direito Processual Geral &bull; Analista
-                  judiciário e Técnico Judiciário do TJPA 2020 &bull; técnico
-                  judiciário/conciliador TJRS 2013
+                  Formado pela faculdade de direito de Varginha &bull;
+                  Especialista em Direito Processual Geral &bull; Aprovado no
+                  concurso de analista judiciário e técnico judiciário do TJPA
+                  2020 &bull; Aprovado técnico judiciário/conciliador TJRS 2013
                 </span>
                 <div className="blog-slider__text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. In

@@ -76,7 +76,7 @@ export const Column = styled.div`
   }
 
   div.left-container {
-    padding: 20px;
+    padding: 50px;
 
     p {
       font-size: 35px;
@@ -84,10 +84,6 @@ export const Column = styled.div`
       .highlight {
         color: var(--color-danger);
         font-size: 52px;
-      }
-
-      &:nth-child(2) {
-        margin-top: 40px;
       }
     }
   }
