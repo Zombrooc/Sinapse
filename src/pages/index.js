@@ -243,7 +243,7 @@ export default function Home() {
                 </a> */}
               </div>
             </div>
-            
+
             <div className="blog-slider__item swiper-slide">
               <div className="blog-slider__img">
                 <img src={elian3} alt="" />
@@ -259,8 +259,8 @@ export default function Home() {
                 <div className="blog-slider__text">
                   Nosso professor de informática tem mais de 4 anos de
                   experiência na área tendo se formado em 2018 como técnico de
-                  informática em 2018, logo depois começando como professor na
-                  cidade de Três Corações. Desenvolvedor e proprietário na
+                  informática, logo seguida começou sua jornada como professor
+                  na cidade de Três Corações. Desenvolvedor e proprietário na
                   empresa The Simple TECH.
                 </div>
                 {/* <a href="#" className="blog-slider__button">
