@@ -6,9 +6,11 @@ import Navbar from "../components/Navbar";
 
 import brazillianSoldiers from "../assets/images/brazillian_soldiers.png";
 import soldier from "../assets/images/soldierPNG.png";
-import elian2 from "../assets/images/contributorsProfilePics/elian2.jpg";
+import elianValdez from "../assets/images/contributorsProfilePics/elianValdez.jpg";
 import joaoPedro from "../assets/images/contributorsProfilePics/joaoPedro.jpeg";
 import joseWilson from "../assets/images/contributorsProfilePics/joseWilson.jpeg";
+import marcusCarelli from "../assets/images/contributorsProfilePics/marcusCarelli.jpeg";
+import giovaniVictor from "../assets/images/contributorsProfilePics/giovaniVictor.jpeg";
 
 import {
   Container,
@@ -218,9 +220,10 @@ export default function Home() {
         <br />
         <div className="blog-slider">
           <div className="blog-slider__wrp swiper-wrapper">
+            {/* Elian Valdez Profile */}
             <div className="blog-slider__item swiper-slide">
               <div className="blog-slider__img">
-                <img src={elian2} alt="" />
+                <img src={elianValdez} alt="" />
               </div>
               <div className="blog-slider__content">
                 <div className="blog-slider__title">
@@ -237,12 +240,9 @@ export default function Home() {
                   professor na cidade de Três Corações. Desenvolvedor e
                   proprietário na empresa The Simple TECH.
                 </div>
-                {/* <a href="#" className="blog-slider__button">
-                  READ MORE
-                </a> */}
               </div>
             </div>
-
+            {/* João Pedro Profile */}
             <div className="blog-slider__item swiper-slide">
               <div className="blog-slider__img">
                 <img src={joaoPedro} alt="" />
@@ -255,16 +255,17 @@ export default function Home() {
                   Gráfico &bull; Editor de Vídeos &bull; Criador de Conteúdo
                 </span>
                 <div className="blog-slider__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                  nesciunt porro labore unde nulla quos veniam tempora quis.
-                  Unde, quae libero. Magni soluta aut temporibus deserunt ipsa?
-                  Unde, iusto id.
+                  Nosso professor de Informática João Pedro, 23 anos, natural de
+                  Três Corações - MG. Atualmente professor de Informática, está
+                  estudando para o concurso da Polícia Federal ( Agente de
+                  Polícia Federal) e cursando Marketing pela universidade UNIS,
+                  em Varginha. Estudou em 2018 no SENAC, realizando curso de
+                  vendas. Possui curso de: Designe Gráfico, edição e criação de
+                  vídeos e curso de manutenção em computadores.
                 </div>
-                {/* <a href="#" className="blog-slider__button">
-                  READ MORE
-                </a> */}
               </div>
             </div>
+            {/* José Wilson Profile */}
             <div className="blog-slider__item swiper-slide">
               <div className="blog-slider__img">
                 <img src={joseWilson} alt="" />
@@ -272,9 +273,8 @@ export default function Home() {
               <div className="blog-slider__content">
                 <div className="blog-slider__title">José Wilson</div>
                 <span className="blog-slider__code">
-                  Formado em Direito pela faculdade de Direito de Varginha
-                  &bull; Pós graduado em Direito civil e empresarial &bull;
-                  Policial Militar desde 2016
+                  Formado em Direito pela FADIVA &bull; Pós graduado em Direito
+                  civil e empresarial &bull; Policial Militar/MG desde 2016
                 </span>
                 <div className="blog-slider__text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
@@ -282,9 +282,53 @@ export default function Home() {
                   Unde, quae libero. Magni soluta aut temporibus deserunt ipsa?
                   Unde, iusto id.
                 </div>
-                {/* <a href="#" className="blog-slider__button">
-                  READ MORE
-                </a> */}
+              </div>
+            </div>
+            {/* Marcus Carelli Profile */}
+            <div className="blog-slider__item swiper-slide">
+              <div className="blog-slider__img">
+                <img src={marcusCarelli} alt="" />
+              </div>
+              <div className="blog-slider__content">
+                <div className="blog-slider__title">Marcus Carelli</div>
+                <span className="blog-slider__code">
+                  Formado em Direito pela faculdade de Direito de Varginha
+                  &bull; Pós graduado em Direito civil e empresarial &bull;
+                  Especialista em Direito Processual Geral &bull; Analista
+                  judiciário e Técnico Judiciário do TJPA 2020 &bull; técnico
+                  judiciário/conciliador TJRS 2013
+                </span>
+                <div className="blog-slider__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                  nesciunt porro labore unde nulla quos veniam tempora quis.
+                  Unde, quae libero. Magni soluta aut temporibus deserunt ipsa?
+                  Unde, iusto id.
+                </div>
+              </div>
+            </div>
+            {/* Giovani Profile */}
+            <div className="blog-slider__item swiper-slide">
+              <div className="blog-slider__img">
+                <img src={giovaniVictor} alt="" />
+              </div>
+              <div className="blog-slider__content">
+                <div className="blog-slider__title">Giovani Victor</div>
+                <span className="blog-slider__code">
+                  Aprovado como agente penitenciário no ano de 2014 &bull;
+                  Formado em Direito pela Unilavras em 2017 &bull; Pós graduado
+                  em direito do trabalho e processual do trabalho &bull; Exerceu
+                  a profissão de advogado por 3 anos e meio, atuando na Seara
+                  Criminal, Cível e Trabalhista &bull; Policial Militar de Minas
+                  Gerais
+                </span>
+                <div className="blog-slider__text">
+                  Nosso professor de direito penal (parte especial), possuí
+                  formação em direito pela Unilavras, já foi aprovado nos
+                  concursos de agente penitênciario em 2014 e polícia militar em
+                  2018. Além de ter advogado na Seara criminal por cerca de 3
+                  anos e meio. Atualmente exerce a profissão de polícial militar
+                  de Minas Gerais.
+                </div>
               </div>
             </div>
           </div>

@@ -49,7 +49,6 @@ export default class MyDocument extends Document {
           /> */}
           {/* <!-- Primary Meta Tags --> */}
           <title>Sinapse Concursos</title>
-          <meta name="title" content="Sinapse Concursos" />
           <meta
             name="description"
             content="Sinapse Concursos leva o estudo preparatório à outro nível, preparamos você para os mais diversos concursos públicos com conteúdos focados em você."
