@@ -4,8 +4,10 @@ import axios from "axios";
 
 import Navbar from "../components/Navbar";
 
+import soldierFirstBlock from "../assets/images/Soldier.png";
 import brazillianSoldiers from "../assets/images/brazillian_soldiers.png";
-import banner from '../assets/images/banner.png';
+import banner from "../assets/images/banner.png";
+import policeCareer from "../assets/images/policeCareer.png";
 
 import soldier from "../assets/images/soldierPNG.png";
 import elianValdez from "../assets/images/contributorsProfilePics/elianValdez.jpg";
@@ -94,10 +96,14 @@ export default function Home() {
 
       <SuccessMessage show={showMessage} />
 
-      <GridContainer style={{ backgroundImage: `url(${banner})` }}>
+      <GridContainer style={{ backgroundImage: `url(${soldierFirstBlock})` }}>
         <Column style={{ flexDirection: "column" }} className="height-100vh">
-          <div className="left-container">
-            <p>
+          <div className="left-container" style={{textAlign: 'center'}}>
+            <img
+              src={policeCareer}
+              style={{ width: "50%" }}
+            />
+            <p style={{textAlign: 'left'}}>
               Seja aprovado para a<br />
               <strong>
                 <em>Polícia Penal - MG</em>
@@ -110,7 +116,7 @@ export default function Home() {
               </span>
               p/ mês
             </p>
-            <p>
+            <p style={{textAlign: 'left'}}>
               <strong>
                 Estudar para um concurso
                 <br />
