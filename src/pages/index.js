@@ -101,7 +101,7 @@ export default function Home() {
           <div className="left-container" style={{textAlign: 'center'}}>
             <img
               src={policeCareer}
-              style={{ width: "50%" }}
+                style={{ width: "50%" }}
             />
             <p style={{textAlign: 'left'}}>
               Seja aprovado para a<br />

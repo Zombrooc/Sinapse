@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // import React, { useState, useEffect } from "react";
 // import { signIn, signOut, useSession } from "next-auth/client";
 import Link from "next/link";
@@ -6,7 +6,8 @@ import Link from "next/link";
 
 // import useWindowSize from "../useWindowSize.js";
 
-import synapseTinyLogo from '../../assets/images/Tiny_Logo_Sinapse__1_-removebg-preview.png';
+// import synapseTinyLogo from '../../assets/images/Tiny_Logo_Sinapse__1_-removebg-preview.png';
+import synapseLogo from "../../assets/images/sinapseLogo.png";
 
 import {
   Nav,
@@ -40,7 +41,7 @@ function Navbar() {
         <Title>
           <Link href="/">
             <a>
-              <img src={synapseTinyLogo} alt="Sinapse - Concursos"/>
+              <img src={synapseLogo} alt="Sinapse - Concursos" />
             </a>
           </Link>
         </Title>
