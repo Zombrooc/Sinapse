@@ -277,10 +277,12 @@ export default function Home() {
                   civil e empresarial &bull; Policial Militar/MG desde 2016
                 </span>
                 <div className="blog-slider__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                  nesciunt porro labore unde nulla quos veniam tempora quis.
-                  Unde, quae libero. Magni soluta aut temporibus deserunt ipsa?
-                  Unde, iusto id.
+                  Nascido em Maceió/AL, vive em Três Corações/MG, formou em
+                  Direito pela Fadiva, Pós Graduou-se em Direito Civil em
+                  Empresarial pela Faculdade de Direito Damásio de Jesus, foi
+                  Advogado em 2014/2015, atualmente é policial militar de minas
+                  gerais desde 2016. Busca ajudar pessoas a serem aprovadas em
+                  concursos públicos na área policial.
                 </div>
               </div>
             </div>
