@@ -5,6 +5,8 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 
 import brazillianSoldiers from "../assets/images/brazillian_soldiers.png";
+import banner from '../assets/images/banner.png';
+
 import soldier from "../assets/images/soldierPNG.png";
 import elianValdez from "../assets/images/contributorsProfilePics/elianValdez.jpg";
 import joaoPedro from "../assets/images/contributorsProfilePics/joaoPedro.jpeg";
@@ -92,7 +94,7 @@ export default function Home() {
 
       <SuccessMessage show={showMessage} />
 
-      <GridContainer style={{ backgroundImage: `url(${brazillianSoldiers})` }}>
+      <GridContainer style={{ backgroundImage: `url(${banner})` }}>
         <Column style={{ flexDirection: "column" }} className="height-100vh">
           <div className="left-container">
             <p>
