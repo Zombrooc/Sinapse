@@ -159,6 +159,7 @@ export const Column = styled.div`
 `;
 
 export const Slider = styled.div`
+  padding: 42px;
   .blog-slider {
     width: 95%;
     position: relative;

@@ -213,6 +213,10 @@ export default function Home() {
         </Column>
       </GridContainer>
       <Slider>
+        <p style={{ textAlign: "center", fontSize: "40px" }}>
+          Conheça nossos colaboradores e professores
+        </p>
+        <br />
         <div className="blog-slider">
           <div className="blog-slider__wrp swiper-wrapper">
             <div className="blog-slider__item swiper-slide">
@@ -239,30 +243,7 @@ export default function Home() {
                 </a> */}
               </div>
             </div>
-            <div className="blog-slider__item swiper-slide">
-              <div className="blog-slider__img">
-                <img src={elian1} alt="" />
-              </div>
-              <div className="blog-slider__content">
-                <div className="blog-slider__title">
-                  Elian Valdez V. L. Gonçalo
-                </div>
-                <span className="blog-slider__code">
-                  CEO & CTO da The Simple TECH &bull; Professor de Informática
-                  &bull; Desenvolvedor FullStack{" "}
-                </span>
-                <div className="blog-slider__text">
-                  Nosso professor de informática tem mais de 4 anos de
-                  experiência na área tendo se formado em 2018 como técnico de
-                  informática em 2018, logo depois começando como professor na
-                  cidade de Três Corações. Desenvolvedor e proprietário na
-                  empresa The Simple TECH.
-                </div>
-                {/* <a href="#" className="blog-slider__button">
-                  READ MORE
-                </a> */}
-              </div>
-            </div>
+            
             <div className="blog-slider__item swiper-slide">
               <div className="blog-slider__img">
                 <img src={elian3} alt="" />
@@ -287,7 +268,6 @@ export default function Home() {
                 </a> */}
               </div>
             </div>
-            
           </div>
           <div className="blog-slider__pagination"></div>
         </div>
