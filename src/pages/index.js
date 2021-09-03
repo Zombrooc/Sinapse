@@ -6,10 +6,8 @@ import Navbar from "../components/Navbar";
 
 import brazillianSoldiers from "../assets/images/brazillian_soldiers.png";
 import soldier from "../assets/images/soldierPNG.png";
-
-import elian1 from "../assets/images/contributorsProfilePics/elian.jpg";
 import elian2 from "../assets/images/contributorsProfilePics/elian2.jpg";
-import elian3 from "../assets/images/contributorsProfilePics/elian3.jpeg";
+import joaoPedro from "../assets/images/contributorsProfilePics/joaoPedro.jpeg";
 
 import {
   Container,
@@ -246,22 +244,19 @@ export default function Home() {
 
             <div className="blog-slider__item swiper-slide">
               <div className="blog-slider__img">
-                <img src={elian3} alt="" />
+                <img src={joaoPedro} alt="" />
               </div>
               <div className="blog-slider__content">
-                <div className="blog-slider__title">
-                  Elian Valdez V. L. Gonçalo
-                </div>
+                <div className="blog-slider__title">João Pedro</div>
                 <span className="blog-slider__code">
-                  CEO & CTO da The Simple TECH &bull; Professor de Informática
-                  &bull; Desenvolvedor FullStack{" "}
+                  Fundador da Sinapse &bull; Professor de Informática &bull;
+                  Formado em Marketing e Vendas
                 </span>
                 <div className="blog-slider__text">
-                  Nosso professor de informática tem mais de 4 anos de
-                  experiência na área tendo se formado em 2018 como técnico de
-                  informática, logo seguida começou sua jornada como professor
-                  na cidade de Três Corações. Desenvolvedor e proprietário na
-                  empresa The Simple TECH.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                  nesciunt porro labore unde nulla quos veniam tempora quis.
+                  Unde, quae libero. Magni soluta aut temporibus deserunt ipsa?
+                  Unde, iusto id.
                 </div>
                 {/* <a href="#" className="blog-slider__button">
                   READ MORE
