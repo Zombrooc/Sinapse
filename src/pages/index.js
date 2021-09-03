@@ -231,10 +231,10 @@ export default function Home() {
                 </span>
                 <div className="blog-slider__text">
                   Nosso professor de informática tem mais de 4 anos de
-                  experiência na área tendo se formado em 2018 como técnico de
-                  informática em 2018, logo depois começando como professor na
-                  cidade de Três Corações. Desenvolvedor e proprietário na
-                  empresa The Simple TECH.
+                  experiência na área tendo se formando em 2018 como técnico de
+                  informática, logo em seguida iniciou sua jornada como
+                  professor na cidade de Três Corações. Desenvolvedor e
+                  proprietário na empresa The Simple TECH.
                 </div>
                 {/* <a href="#" className="blog-slider__button">
                   READ MORE
