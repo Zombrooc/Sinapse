@@ -200,13 +200,12 @@ export default function Home() {
 
           <div className="left-container__content">
             <p>
-              {" "}
-              A estrutura que você precisa para passar nos concursos públicos,
+              A estrutura que você precisa para passar nos concursos públicos
               você só encontra aqui.
             </p>
-            <p> Procurando estabilidade financeira?</p>
+            <p>Procurando estabilidade financeira?</p>
             <p>
-              A estabilidade financeira nunca esteve tão perto de você como
+              Ela nunca esteve tão perto de você como
               agora.
             </p>
           </div>
@@ -219,8 +218,8 @@ export default function Home() {
           <img src={workout} />
           <div className="right-container__content">
             <p>
-              Nós da Sinapse Concursos além de te prepararmos para a prova
-              objetiva, também seremos os primeiros a te preparar para o Teste
+              Nós da Sinapse Concursos, além de prepararmos você para a prova
+              objetiva, seremos os primeiros a te preparar para o Teste
               de Aptidão Física (TAF).
             </p>
           </div>
