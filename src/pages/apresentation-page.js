@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
+import Link from 'next/link';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { GiPapers } from "react-icons/gi";
@@ -59,7 +60,11 @@ export default function ApresentationPage() {
           <SidebarContent>
             <Menu iconShape="circle">
               <MenuItem active={true} icon={<FiHome />}>
-                <span style={{ color: "var(--color-light)" }}>Voltar</span>
+                <Link href="/">
+                  <a>
+                    <span style={{ color: "var(--color-light)" }}>Voltar</span>
+                  </a>
+                </Link>
               </MenuItem>
               <MenuItem icon={<FaList />}>Edital</MenuItem>
               <MenuItem icon={<BiBook />}>Apostilas</MenuItem>
