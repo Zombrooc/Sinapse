@@ -216,8 +216,8 @@ export default function Home() {
           <div className="right-container__content">
             <p>
               Nós, da Sinapse Concursos, além de prepararmos você para a prova
-              objetiva, seremos os primeiros a te preparar para o Teste de
-              Aptidão Física (TAF).
+              objetiva, seremos os primeiros a te preparar para o teste de
+              aptidão física (TAF).
             </p>
           </div>
         </Column>
