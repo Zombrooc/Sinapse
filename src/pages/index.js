@@ -9,9 +9,6 @@ import firstBlockBG from "../assets/images/firstBlockBG.png";
 import workout from "../assets/images/workout.jpg";
 import policeCareer from "../assets/images/policeCareer.png";
 
-import facebookIcon from "../assets/images/facebookIcon.png";
-import instagramIcon from "../assets/images/instagramIcon.png";
-
 import soldier from "../assets/images/soldierPNG.png";
 import elianValdez from "../assets/images/contributorsProfilePics/elianValdez.jpg";
 // import joaoPedro from "../assets/images/contributorsProfilePics/joaoPedro.jpeg";
@@ -27,7 +24,6 @@ import {
   Column,
   Slider,
   ContactForm,
-  ContactInfo,
 } from "../styles/pages/home.styles";
 import SuccessMessage from "../components/SuccessMessage";
 
@@ -99,28 +95,7 @@ export default function Home() {
 
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       </Head>
-      <ContactInfo>
-        <div className="contactElement">
-          <p> Três Corações/MG </p>
-          <p> Av. Sete de Setembro, 501 - Centro</p>
-        </div>
-        <div className="contactElement">
-          <p> Segunda a Sexta: 09:00 às 13:00 | 15:00 às 21:00</p>
-          <p> Sábado: 09:00 às 18:00</p>
-        </div>
-        <div className="socialMedias contactElement">
-          <div>
-            <a href="https://www.facebook.com/profile.php?id=100072520026650">
-              <img src={facebookIcon} alt="Facebook" />
-            </a>
-          </div>
-          <div>
-            <a href="https://instagram.com/sinapse.concursos">
-              <img src={instagramIcon} alt="Instagram" />
-            </a>
-          </div>
-        </div>
-      </ContactInfo>
+      
       <Navbar />
 
       <SuccessMessage show={showMessage} />
@@ -454,7 +429,7 @@ export default function Home() {
           </div>
         </form>
       </ContactForm>
-      {/* <Footer /> */}
+      <Footer />
     </Container>
   );
 }

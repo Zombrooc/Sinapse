@@ -8,18 +8,21 @@ import Link from "next/link";
 
 // import synapseTinyLogo from '../../assets/images/Tiny_Logo_Sinapse__1_-removebg-preview.png';
 import synapseLogo from "../../assets/images/sinapseLogo.png";
+import facebookIcon from "../../assets/images/facebookIcon.png";
+import instagramIcon from "../../assets/images/instagramIcon.png";
 
 import {
   Nav,
   Container,
   Title,
+  ContactInfo,
   // Menu,
   // MenuItem,
   // ToggleButton,
   // CloseIcon,
 } from "./styles";
 
-function Navbar() {
+function Navbar({hideContactInfo = false}) {
   // const [menuStatus, setMenuStatus] = useState(false);
   // const [session, loading] = useSession();
 
@@ -36,56 +39,80 @@ function Navbar() {
   // }, [size.width]);
 
   return (
-    <Nav>
-      <Container>
-        <Title>
-          <Link href="/">
-            <a>
-              <img src={synapseLogo} alt="Sinapse - Concursos" />
+    <>
+      <ContactInfo hide={hideContactInfo}>
+        <div className="contactElement">
+          <p> Três Corações/MG </p>
+          <p> Av. Sete de Setembro, 501 - Centro</p>
+        </div>
+        <div className="contactElement">
+          <p> Segunda a Sexta: 09:00 às 13:00 | 15:00 às 21:00</p>
+          <p> Sábado: 09:00 às 18:00</p>
+        </div>
+        <div className="socialMedias contactElement">
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=100072520026650">
+              <img src={facebookIcon} alt="Facebook" />
             </a>
-          </Link>
-        </Title>
-        {/* <ToggleButton onClick={menuHandler}>
-          {!menuStatus && <MdMenu />}
-        </ToggleButton>
-        <Menu isOpen={menuStatus}>
-          <CloseIcon isOpen={menuStatus} onClick={menuHandler}>
-            <MdClose />
-          </CloseIcon>
-          {!session && (
-            <>
-              <MenuItem>
-                  <a onClick={() => signIn()}>Entrar</a>
-              </MenuItem>
-              <MenuItem>
-                <Link href="/auth/signup">
-                  <a>Cadastrar</a>
-                </Link>
-              </MenuItem>
-            </>
-          )}
-          {session && (
-            <>
-              <MenuItem>
-                <Link href="/">
-                  <a> {session.user.name}</a>
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <a onClick={() => signOut()}>
-                  Sair
-                </a>
-              </MenuItem>
-            </>
-          )}
-          <MenuItem>
-            <Link href="/services/request-assistence">
-              <a className="active"><strong>Solicitar Assistêcia Técnica</strong></a>
+          </div>
+          <div>
+            <a href="https://instagram.com/sinapse.concursos">
+              <img src={instagramIcon} alt="Instagram" />
+            </a>
+          </div>
+        </div>
+      </ContactInfo>
+      <Nav>
+        <Container>
+          <Title>
+            <Link href="/">
+              <a>
+                <img src={synapseLogo} alt="Sinapse - Concursos" />
+              </a>
             </Link>
-          </MenuItem>
-        </Menu> */}
-      </Container>
-    </Nav>
+          </Title>
+          {/* <ToggleButton onClick={menuHandler}>
+            {!menuStatus && <MdMenu />}
+          </ToggleButton>
+          <Menu isOpen={menuStatus}>
+            <CloseIcon isOpen={menuStatus} onClick={menuHandler}>
+              <MdClose />
+            </CloseIcon>
+            {!session && (
+              <>
+                <MenuItem>
+                    <a onClick={() => signIn()}>Entrar</a>
+                </MenuItem>
+                <MenuItem>
+                  <Link href="/auth/signup">
+                    <a>Cadastrar</a>
+                  </Link>
+                </MenuItem>
+              </>
+            )}
+            {session && (
+              <>
+                <MenuItem>
+                  <Link href="/">
+                    <a> {session.user.name}</a>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <a onClick={() => signOut()}>
+                    Sair
+                  </a>
+                </MenuItem>
+              </>
+            )}
+            <MenuItem>
+              <Link href="/services/request-assistence">
+                <a className="active"><strong>Solicitar Assistêcia Técnica</strong></a>
+              </Link>
+            </MenuItem>
+          </Menu> */}
+        </Container>
+      </Nav>
+    </>
   );
 }
 
