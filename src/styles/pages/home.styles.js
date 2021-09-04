@@ -438,4 +438,8 @@ export const ContactForm = styled.div`
     font-weight: 600;
     text-align: center;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 2em;
+  }
 `;
