@@ -28,7 +28,7 @@ export const GridContainer = styled.div`
     overflow: hidden;
 
     p {
-      font-size: 29px;
+      font-size: 1.2em;
       font-weight: 700;
     }
 
@@ -73,7 +73,7 @@ export const GridContainer = styled.div`
 
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-direction: column;
     }
 
