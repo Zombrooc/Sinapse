@@ -9,6 +9,7 @@ function SuccessMessage({show}) {
         <strong>Mensagem Enviada com Sucesso!</strong> Logo entraremos em
         contato com você.
       </p>
+      <p> Você será redirecionado para outra página em instantes.</p>
     </Container>
   );
 }
