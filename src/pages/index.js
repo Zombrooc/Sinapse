@@ -3,17 +3,23 @@ import Head from "next/head";
 import axios from "axios";
 
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 import firstBlockBG from "../assets/images/firstBlockBG.png";
 import workout from "../assets/images/workout.jpg";
 import policeCareer from "../assets/images/policeCareer.png";
 
+import facebookIcon from "../assets/images/facebookIcon.png";
+import instagramIcon from "../assets/images/instagramIcon.png";
+
 import soldier from "../assets/images/soldierPNG.png";
 import elianValdez from "../assets/images/contributorsProfilePics/elianValdez.jpg";
-import joaoPedro from "../assets/images/contributorsProfilePics/joaoPedro.jpeg";
+// import joaoPedro from "../assets/images/contributorsProfilePics/joaoPedro.jpeg";
+import joaoPedro2 from "../assets/images/contributorsProfilePics/joaoPedro2.jpeg";
 import joseWilson from "../assets/images/contributorsProfilePics/joseWilson.jpeg";
 import marcusCarelli from "../assets/images/contributorsProfilePics/marcusCarelli.jpeg";
 import giovaniVictor from "../assets/images/contributorsProfilePics/giovaniVictor.jpeg";
+import pauloVictor from "../assets/images/contributorsProfilePics/pauloVictor.jpg";
 
 import {
   Container,
@@ -21,6 +27,7 @@ import {
   Column,
   Slider,
   ContactForm,
+  ContactInfo,
 } from "../styles/pages/home.styles";
 import SuccessMessage from "../components/SuccessMessage";
 
@@ -92,6 +99,28 @@ export default function Home() {
 
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       </Head>
+      <ContactInfo>
+        <div className="contactElement">
+          <p> Três Corações/MG </p>
+          <p> Av. Sete de Setembro, 501 - Centro</p>
+        </div>
+        <div className="contactElement">
+          <p> Segunda a Sexta: 09:00 às 13:00 | 15:00 às 21:00</p>
+          <p> Sábado: 09:00 às 18:00</p>
+        </div>
+        <div className="socialMedias contactElement">
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=100072520026650">
+              <img src={facebookIcon} alt="Facebook" />
+            </a>
+          </div>
+          <div>
+            <a href="https://instagram.com/sinapse.concursos">
+              <img src={instagramIcon} alt="Instagram" />
+            </a>
+          </div>
+        </div>
+      </ContactInfo>
       <Navbar />
 
       <SuccessMessage show={showMessage} />
@@ -203,15 +232,11 @@ export default function Home() {
             <p>Ela nunca esteve tão perto de você como agora.</p>
           </div>
         </Column>
-        {/* <div></div> */}
-        <Column
-          className="right-container"
-          // style={{ backgroundImage: `url(${workout})` }}
-        >
+        <Column className="right-container">
           <img src={workout} />
           <div className="right-container__content">
             <p>
-              Nós da Sinapse Concursos, além de prepararmos você para a prova
+              Nós, da Sinapse Concursos, além de prepararmos você para a prova
               objetiva, seremos os primeiros a te preparar para o Teste de
               Aptidão Física (TAF).
             </p>
@@ -250,7 +275,7 @@ export default function Home() {
             {/* João Pedro Profile */}
             <div className="blog-slider__item swiper-slide">
               <div className="blog-slider__img">
-                <img src={joaoPedro} alt="" />
+                <img src={joaoPedro2} alt="" />
               </div>
               <div className="blog-slider__content">
                 <div className="blog-slider__title">João Pedro</div>
@@ -337,6 +362,31 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {/* Paulo Victor Profile */}
+            <div className="blog-slider__item swiper-slide">
+              <div className="blog-slider__img">
+                <img src={pauloVictor} alt="" />
+              </div>
+              <div className="blog-slider__content">
+                <div className="blog-slider__title">
+                  Paulo Victor Quintiliano Barbosa
+                </div>
+                <span className="blog-slider__code">
+                  Graduando em Direito pela Universidade Vale do Rio Verde -
+                  UninCor, turma 2017/2021 &bull; Estagiário do Tribunal de
+                  Justiça de Minas Gerais
+                </span>
+                <div className="blog-slider__text">
+                  Nosso professor de Direitos Humanos e Legislação Especial é
+                  graduando em Direito pela Universidade Vale do Rio Verde -
+                  UninCor, atualmente do 10º período do curso. É estagiário do
+                  Tribunal de Justiça de Minas Gerais, lotado na 1ª Vara
+                  Criminal e da Infância e da Juventude de Três Corações. Já
+                  estagiou no Juizado Especial Cível e Criminal da mesma
+                  comarca.
+                </div>
+              </div>
+            </div>
           </div>
           <div className="blog-slider__pagination"></div>
         </div>
@@ -404,6 +454,7 @@ export default function Home() {
           </div>
         </form>
       </ContactForm>
+      {/* <Footer /> */}
     </Container>
   );
 }

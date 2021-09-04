@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'next/link';
 
-import logoWithTagline from '../../assets/images/logoWithTagline-Dark.svg';
+import sinapseLogo from '../../assets/images/sinapseLogo.png';
 
 import { Container } from "./styles.js";
 
@@ -13,7 +13,7 @@ function Footer() {
           <h1 className="footer__logo">
             {/* The Simple{" "}
             <span style={{ fontFamily: "JetBrains Mono" }}>TECH</span> */}
-            <img src={logoWithTagline} alt="The Simple TECH"/>
+            <img src={sinapseLogo} alt="Sinapse" style={{width: "50%"}}/>
           </h1>
 
           <h2>Contato</h2>
@@ -34,19 +34,25 @@ function Footer() {
             <h2 className="nav__title">Redes Sociais</h2>
 
             <ul className="nav__ul">
-              <li>
-                <a href="https://www.facebook.com/the.simple.tech.solutions">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100072520026650">
                   Facebook
                 </a>
               </li>
-
               <li>
-                <a href="https://wa.me/message/FD6P356HWLEVH1">WhatsApp</a>
+                <a href="https://instagram.com/sinapse.concursos">
+                  Instagram
+                </a>
               </li>
+              
+
+              {/* <li>
+                <a href="https://wa.me/message/FD6P356HWLEVH1">WhatsApp</a>
+              </li> */}
             </ul>
           </li>
 
-          <li className="nav__item nav__item--extra">
+          {/* <li className="nav__item nav__item--extra">
             <h2 className="nav__title">Serviços</h2>
 
             <ul className="nav__ul nav__ul--extra">
@@ -59,9 +65,6 @@ function Footer() {
               </li>
 
               <li>
-                {/* <Link href="/services/request-assistence">
-                  <a>Assistência Técnica</a>
-                </Link> */}
                 <a href="https://wa.me/message/FD6P356HWLEVH1"> Assistência Técnica </a>
               </li>
 
@@ -71,26 +74,26 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </li>
+          </li> */}
 
           <li className="nav__item">
             <h2 className="nav__title">Legal</h2>
 
             <ul className="nav__ul">
               <li>
-                <a href="https://www.thesimpletech.com.br/termo-de-politica-e-privacidade.html">
+                <a href="https://sinapse.thesimpletech.com.br/termo-de-politica-e-privacidade.html">
                   Termos de politica e Privacidade
                 </a>
               </li>
 
               <li>
-                <a href="https://www.thesimpletech.com.br/termo-de-servico.html">
+                <a href="https://sinapse.thesimpletech.com.br/termo-de-servico.html">
                   Termos de Serviço
                 </a>
               </li>
 
               <li>
-                <a href="https://www.thesimpletech.com.br/sitemap_index.xml">
+                <a href="https://sinapse.thesimpletech.com.br/sitemap_index.xml">
                   Sitemap
                 </a>
               </li>
