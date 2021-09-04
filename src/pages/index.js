@@ -5,6 +5,7 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 
 import firstBlockBG from "../assets/images/firstBlockBG.png";
+import workout from "../assets/images/workout.jpg";
 import policeCareer from "../assets/images/policeCareer.png";
 
 import soldier from "../assets/images/soldierPNG.png";
@@ -95,7 +96,7 @@ export default function Home() {
       <SuccessMessage show={showMessage} />
 
       <GridContainer style={{ backgroundImage: `url(${firstBlockBG})` }}>
-        <Column style={{ flexDirection: "column" }} >
+        <Column style={{ flexDirection: "column" }}>
           <div className="left-container" style={{ textAlign: "center" }}>
             <img src={policeCareer} style={{ width: "90%" }} />
             <p style={{ textAlign: "left" }}>
@@ -193,27 +194,35 @@ export default function Home() {
         </Column>
       </GridContainer>
 
-      <GridContainer id="secondSection">
-        <Column>
+      <GridContainer id="secondSection" style={{ overflow: "hidden" }}>
+        <Column className="left-container">
           <img src={soldier} />
+
+          <div className="left-container__content">
+            <p>
+              {" "}
+              A formação que você precisa para passar nos concursos públicos da
+              atualidade.
+            </p>
+            <p>
+              A estabilidade financeira nunca esteve tão perto de você como
+              agora.
+            </p>
+          </div>
         </Column>
-        <div></div>
+        {/* <div></div> */}
         <Column
-          style={{
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            padding: "30px",
-          }}
+          className="right-container"
+          // style={{ backgroundImage: `url(${workout})` }}
         >
-          <p>
-            {" "}
-            A formação que você precisa para passar nos concursos públicos da
-            atualidade.
-          </p>
-          <p>
-            A estabilidade financeira nunca esteve tão perto de você como agora.
-          </p>
+          <img src={workout} />
+          <div className="right-container__content">
+            <p>
+              Nós da Sinapse Concursos além de te preparar para a prova
+              objetiva, também seremos os primeiros a te preparar para o Teste
+              de Aptidão Física (TAF).
+            </p>
+          </div>
         </Column>
       </GridContainer>
       <Slider>

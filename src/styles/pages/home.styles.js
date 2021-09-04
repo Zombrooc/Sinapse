@@ -21,26 +21,87 @@ export const GridContainer = styled.div`
   }
 
   &#secondSection {
-    grid-template-columns: 30% 70%;
-    padding: 0 40px 0 40px;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 0 40px 0 40px; */
     background: var(--color-dark);
     border-radius: 0 0 100px 100px;
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
-    }
+    overflow: hidden;
 
     p {
       font-size: 29px;
       font-weight: 700;
     }
 
-    & div:nth-child(2) {
-      display: none;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      border-radius: 0;
     }
 
-    @media screen and (max-width: 768px) {
+    .left-container,
+    .right-container {
+      position: relative;
+
+      img {
+        /* height: 100%; */
+        width: 52%;
+        object-fit: contain;
+      }
+    }
+
+    /* .right-container {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    } */
+
+    /* .right-container {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    } */
+
+    .left-container__content,
+    .right-container__content {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      background: rgba(40, 42, 54, 0.6);
+      width: 100%;
+      height: 100%;
+      padding: 60px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* .left-container, .right-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(40, 42, 54, 0.6);
+    } */
+
+    /* .right-container {
+      flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+    } */
+
+    /* & div:nth-child(2) {
+      display: none;
+    } */
+
+    /* @media screen and (max-width: 768px) {
       grid-template-columns: 1fr !important;
       position: relative;
       border-radius: 0;
@@ -61,7 +122,7 @@ export const GridContainer = styled.div`
         left: 0;
         display: flex;
       }
-    }
+    } */
   }
 `;
 
