@@ -177,12 +177,7 @@ export default function Home() {
                   <option value="Polícia Federal"> Polícia Federal </option>
                   <option value="Polícia Militar"> Polícia Militar </option>
                   <option value="Polícia Civíl"> Polícia Civíl </option>
-                  <option value="Corpo de Bombeiro"> Corpo de Bombeiro </option>
                   <option value="Polícia Penal"> Polícia Penal </option>
-                  <option value="Exército Brasileiro">
-                    {" "}
-                    Exército Brasileiro{" "}
-                  </option>
                 </select>{" "}
               </div>
               <input type="hidden" name="_gotcha" />
