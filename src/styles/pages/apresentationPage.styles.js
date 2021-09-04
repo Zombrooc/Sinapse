@@ -27,6 +27,7 @@ export const Container = styled.div`
     font-weight: bold;
     font-size: 22px;
     cursor: pointer;
+    padding: 15px;
 
     display: flex;
     justify-content: flex-end;
