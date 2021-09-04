@@ -28,7 +28,7 @@ export const GridContainer = styled.div`
     overflow: hidden;
 
     p {
-      font-size: 1.2em;
+      font-size: 1.7em;
       font-weight: 700;
     }
 
