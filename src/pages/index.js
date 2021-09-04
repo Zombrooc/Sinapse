@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
+import { useRouter } from 'next/router';
 import axios from "axios";
 
 import Navbar from "../components/Navbar";
@@ -28,6 +29,9 @@ import {
 import SuccessMessage from "../components/SuccessMessage";
 
 export default function Home() {
+
+  const router = useRouter();
+
   const [inputData, setInputData] = useState({
     name: "",
     email: "",
@@ -80,7 +84,8 @@ export default function Home() {
     if (response.status === 200) {
       setTimeout(() => {
         setShowMessage(false);
-      }, 6000);
+      }, 5000);
+      router.push('/apresentation-page')
     }
   };
 
