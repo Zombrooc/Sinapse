@@ -117,6 +117,20 @@ export default createGlobalStyle`
     border-color: var(--color-danger);
   }
 
+  input[type="submit"] {
+        color: var(--color-light);
+        background: var(--color-danger);
+        padding: 15px 20px;
+        border-radius: 7px;
+        border: none;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          background: #bf3f3f;
+        }
+      }
+
   button {
     display: block;
     background: var(--color-dark);

@@ -20,6 +20,7 @@ import {
   GridContainer,
   Column,
   Slider,
+  ContactForm,
 } from "../styles/pages/home.styles";
 import SuccessMessage from "../components/SuccessMessage";
 
@@ -199,10 +200,7 @@ export default function Home() {
               você só encontra aqui.
             </p>
             <p>Procurando estabilidade financeira?</p>
-            <p>
-              Ela nunca esteve tão perto de você como
-              agora.
-            </p>
+            <p>Ela nunca esteve tão perto de você como agora.</p>
           </div>
         </Column>
         {/* <div></div> */}
@@ -214,8 +212,8 @@ export default function Home() {
           <div className="right-container__content">
             <p>
               Nós da Sinapse Concursos, além de prepararmos você para a prova
-              objetiva, seremos os primeiros a te preparar para o Teste
-              de Aptidão Física (TAF).
+              objetiva, seremos os primeiros a te preparar para o Teste de
+              Aptidão Física (TAF).
             </p>
           </div>
         </Column>
@@ -343,6 +341,69 @@ export default function Home() {
           <div className="blog-slider__pagination"></div>
         </div>
       </Slider>
+
+      <br />
+      <br />
+
+      <ContactForm>
+        <p> Junte-se a nós nessa jornada </p>
+        <form onSubmit={handleSubmit}>
+          <div className="formGroup">
+            <label> Nome </label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Digite seu nome"
+              onChange={handleInput}
+              value={inputData?.name}
+              required
+            />
+          </div>
+          <div className="formGroup">
+            <label> E-mail </label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Digite seu E-mail"
+              onChange={handleInput}
+              value={inputData?.email}
+              required
+            />
+          </div>
+          <div className="formGroup">
+            <label> WhatsApp </label>
+            <input
+              type="text"
+              name="whatsapp"
+              placeholder="Digite seu WhatsApp"
+              onChange={handleInput}
+              value={inputData?.whatsapp}
+              required
+            />
+          </div>
+          <div className="formGroup">
+            <label> Concurso dos Sonhos </label>
+            <select
+              name="dreamCareer"
+              onChange={handleInput}
+              value={inputData?.dreamCareer}
+            >
+              <option defaultValue disabled value="defaultCarrer">
+                {" "}
+                Selecione a carreira dos seus sonhos{" "}
+              </option>
+              <option value="Polícia Federal"> Polícia Federal </option>
+              <option value="Polícia Militar"> Polícia Militar </option>
+              <option value="Polícia Civíl"> Polícia Civíl </option>
+              <option value="Polícia Penal"> Polícia Penal </option>
+            </select>{" "}
+          </div>
+          <input type="hidden" name="_gotcha" />
+          <div className="formGroup">
+            <input type="submit" value="QUERO PASSAR!" />
+          </div>
+        </form>
+      </ContactForm>
     </Container>
   );
 }

@@ -183,20 +183,7 @@ export const Column = styled.div`
 
     .formGroup {
       width: 100%;
-
-      input[type="submit"] {
-        color: var(--color-light);
-        background: var(--color-danger);
-        padding: 15px 20px;
-        border-radius: 7px;
-        border: none;
-        transition: all 0.5s ease-in-out;
-        cursor: pointer;
-
-        &:hover {
-          background: #bf3f3f;
-        }
-      }
+      
     }
   }
   @media screen and (max-width: 768px) {
@@ -435,5 +422,20 @@ export const Slider = styled.div`
         }
       }
     }
+  }
+`;
+
+export const ContactForm = styled.div`
+  padding: 15px 9em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    font-size: 4.4em;
+    font-weight: 600;
+    text-align: center;
   }
 `;
