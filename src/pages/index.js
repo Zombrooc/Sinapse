@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import axios from "axios";
 
 import Navbar from "../components/Navbar";
@@ -29,7 +29,6 @@ import {
 import SuccessMessage from "../components/SuccessMessage";
 
 export default function Home() {
-
   const router = useRouter();
 
   const [inputData, setInputData] = useState({
@@ -85,7 +84,7 @@ export default function Home() {
       setTimeout(() => {
         setShowMessage(false);
       }, 5000);
-      router.push('/apresentation-page')
+      router.push("/apresentation-page");
     }
   };
 
@@ -100,7 +99,7 @@ export default function Home() {
 
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       </Head>
-      
+
       <Navbar />
 
       <SuccessMessage show={showMessage} />
@@ -310,10 +309,12 @@ export default function Home() {
                   2020 &bull; Aprovado técnico judiciário/conciliador TJRS 2013
                 </span>
                 <div className="blog-slider__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                  nesciunt porro labore unde nulla quos veniam tempora quis.
-                  Unde, quae libero. Magni soluta aut temporibus deserunt ipsa?
-                  Unde, iusto id.
+                  Nosso professor de Direito Penal - Parte Geral é Natural de
+                  Feira de Santana-BA e Advogado há quase uma década. Possui
+                  vários artigos científicos publicados, inclusive no núcleo de
+                  mestrado e doutorado da Universidade Federal de Santa
+                  Catarina. Sócio Proprietário do escritório CM-Advogados com
+                  atuação nos Tribunais de MG,SP,PR e SC.
                 </div>
               </div>
             </div>
