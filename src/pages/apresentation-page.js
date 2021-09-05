@@ -4,6 +4,8 @@ import Link from "next/link";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { GiPapers } from "react-icons/gi";
+import { FaList } from "react-icons/fa";
+import { FiHome } from "react-icons/fi";
 import {
   ProSidebar,
   Menu,
@@ -12,10 +14,6 @@ import {
   SidebarHeader,
   SidebarContent,
 } from "react-pro-sidebar";
-
-//import icons from react icons
-import { FaList } from "react-icons/fa";
-import { FiHome } from "react-icons/fi";
 
 import "react-pro-sidebar/dist/css/styles.css";
 
@@ -77,7 +75,7 @@ export default function ApresentationPage() {
   // };
 
   return (
-    <Container style={{ backgroundImage: `url(${apresentationPageBGPenal})` }}>
+    <Container >
       <Head>
         <title>Sinapse Concursos</title>
       </Head>

@@ -68,12 +68,6 @@ export default function Home() {
     event.preventDefault();
 
     setShowMessage(true);
-    setInputData({
-      name: "",
-      email: "",
-      whatsapp: "",
-      dreamCareer: "defaultCarrer",
-    });
 
     const response = await axios.post(
       "https://formcarry.com/s/2v8SfOenpeD",
@@ -84,7 +78,17 @@ export default function Home() {
       setTimeout(() => {
         setShowMessage(false);
       }, 5000);
-      router.push("/apresentation-page");
+
+      if (inputData.dreamCareer === "Polícia Penal") {
+        router.push("/career/policia-penal");
+      } else {
+        setInputData({
+          name: "",
+          email: "",
+          whatsapp: "",
+          dreamCareer: "defaultCarrer",
+        });
+      }
     }
   };
 
