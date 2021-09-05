@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,11 +10,11 @@ export const Container = styled.div`
 
   #header {
     position: absolute;
-    width: 220px;
+    width: 350px;
   }
 
   #header .pro-sidebar {
-    height: 100vh;
+    min-height: 100%;
   }
 
   #header .closemenu {
@@ -46,6 +46,7 @@ export const Container = styled.div`
     background-color: white;
     box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
   }
+
   #header .pro-sidebar-inner .pro-sidebar-layout {
     overflow-y: hidden;
   }
@@ -89,12 +90,27 @@ export const Container = styled.div`
 
   #header .pro-sidebar-inner .pro-sidebar-layout .active {
     /* background-image: linear-gradient(0deg, #fece00 0%, #ffe172 100%); */
-    /* color: var(--color-light); */
-    background: var(--color-dark);
+    color: var(--color-dark) !important;
+  }
+
+  .pro-sidebar .pro-menu a {
+    color: var(--color-dark);
   }
 
   #header .logo {
     padding: 20px;
+  }
+
+  .pro-sidebar
+    .pro-menu
+    .pro-menu-item.pro-sub-menu
+    .pro-inner-list-item
+    .pro-inner-item:before {
+    content: none;
+  }
+
+  .pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
+    background: unset;
   }
 
   @media only screen and (max-width: 720px) {

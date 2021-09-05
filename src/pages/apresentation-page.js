@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import Link from 'next/link';
+import Link from "next/link";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { GiPapers } from "react-icons/gi";
 import {
   ProSidebar,
   Menu,
+  SubMenu,
   MenuItem,
   SidebarHeader,
   SidebarContent,
@@ -18,33 +19,68 @@ import { FiHome } from "react-icons/fi";
 
 import "react-pro-sidebar/dist/css/styles.css";
 
-import apresentationPageBG from "../assets/images/apresentationPage.jpeg";
+import apresentationPageBGPenal from "../assets/images/apresentationPagePenal.jpeg";
 
 // import apresentationPageBG from "../assets/images/apresentationPageCivil.jpeg";
 
 // import apresentationPageBG from "../assets/images/apresentationPagePF.jpeg";
+
+// import edital2014 from "../assets/download-content/penal/editais/Edital_Penal_2014.pdf";
+// import edital2018 from "../assets/download-content/penal/editais/Edital_Penal_2018.pdf";
+// import prova2014 from "../assets/download-content/penal/prova/prova_2014.pdf";
+// import prova2018 from "../assets/download-content/penal/prova/prova_2018.pdf";
+// import gabarito2014 from "../assets/download-content/penal/prova/gabarito_2014.pdf";
+// import gabarito2018 from "../assets/download-content/penal/prova/gabarito_2018.pdf";
 
 import {
   Container,
   FirstBlock,
 } from "../styles/pages/apresentationPage.styles";
 
-export default function ApresentationPage() {
-  //create initial menuCollapse state using useState hook
-  const [menuCollapse, setMenuCollapse] = useState(false);
+// function PoliciaPenalEditais() {
+//   console.log("editais");
+//   return (
+//     <Container
+//       style={{ backgroundImage: `url(${apresentationPageBGPenal})` }}
+//     ></Container>
+//   );
+// }
 
-  //create a custom function that will change menucollapse state from false to true and true to false
+// function PoliciaPenalApostilas() {
+//   console.log("apostilas");
+//   return (
+//     <Container
+//       style={{ backgroundImage: `url(${apresentationPageBGPenal})` }}
+//     ></Container>
+//   );
+// }
+
+// function PoliciaPenalProvas() {
+//   console.log("provas");
+//   return (
+//     <Container
+//       style={{ backgroundImage: `url(${apresentationPageBGPenal})` }}
+//     ></Container>
+//   );
+// }
+
+export default function ApresentationPage() {
+  const [menuCollapse, setMenuCollapse] = useState(false);
+  // const [currentContent, setCurrentContent] = useState(undefined);
+
   const menuIconClick = () => {
-    //condition checking to change state from true to false and vice versa
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
 
+  // const currentContentClick = (currentContentClick) => {
+  //   setCurrentContent(currentContentClick);
+  // };
+
   return (
-    <Container style={{ backgroundImage: `url(${apresentationPageBG})` }}>
+    <Container style={{ backgroundImage: `url(${apresentationPageBGPenal})` }}>
       <Head>
         <title>Sinapse Concursos</title>
       </Head>
-      {/* <Navbar hideContactInfo/> */}
       <div id="header">
         <ProSidebar collapsed={menuCollapse}>
           <SidebarHeader>
@@ -61,14 +97,116 @@ export default function ApresentationPage() {
             <Menu iconShape="circle">
               <MenuItem active={true} icon={<FiHome />}>
                 <Link href="/">
-                  <a>
-                    <span style={{ color: "var(--color-light)" }}>Voltar</span>
-                  </a>
+                  <a> Voltar </a>
                 </Link>
               </MenuItem>
-              <MenuItem icon={<FaList />}>Edital</MenuItem>
-              <MenuItem icon={<BiBook />}>Apostilas</MenuItem>
-              <MenuItem icon={<GiPapers />}>Últimas provas</MenuItem>
+              <SubMenu title="Policia Penal">
+                <SubMenu title="Editais" icon={<FaList />}>
+                  <MenuItem>
+                    {" "}
+                    <a href="/download-content/penal/editais/Edital_Penal_2014.pdf">
+                      Edital 2014{" "}
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    {" "}
+                    <a href="/download-content/penal/editais/Edital_Penal_2018.pdf">
+                      Edital 2018{" "}
+                    </a>
+                  </MenuItem>
+                </SubMenu>
+                {/* <MenuItem >
+                  
+                    {" "}
+                    <FaList /> Editais
+                </MenuItem> */}
+                <MenuItem>
+                  {" "}
+                  {/* <BiBook />  */}
+                  Apostilas
+                </MenuItem>
+                {/* <MenuItem>
+                   Últimas provas
+                </MenuItem> */}
+                <SubMenu title="Últimas Provas" icon={<GiPapers />}>
+                  <SubMenu title="Prova 2014" icon={<GiPapers />}>
+                    <MenuItem>
+                      {" "}
+                      <a href="/download-content/penal/provas/prova_2014.pdf">
+                        Prova 2014{" "}
+                      </a>
+                    </MenuItem>
+                    <MenuItem>
+                      {" "}
+                      <a href="/download-content/penal/provas/gabarito_2014.pdf">
+                        Gabarito 2014{" "}
+                      </a>
+                    </MenuItem>
+                  </SubMenu>
+                  <SubMenu title="Prova 2018" icon={<GiPapers />}>
+                    <MenuItem>
+                      {" "}
+                      <a href="/download-content/penal/provas/prova_2018.pdf">
+                        Prova 2018{" "}
+                      </a>
+                    </MenuItem>
+                    <MenuItem>
+                      {" "}
+                      <a href="/download-content/penal/provas/gabarito_2018.pdf">
+                        Gabarito 2018{" "}
+                      </a>
+                    </MenuItem>
+                  </SubMenu>
+                </SubMenu>
+              </SubMenu>
+              {/* <SubMenu title="Policia Federal">
+                <MenuItem>
+                  
+                    {" "}
+                    <FaList /> Editais
+                </MenuItem>
+                <MenuItem>
+                  
+                    {" "}
+                    <BiBook /> Apostilas
+                </MenuItem>
+                <MenuItem>
+                  
+                    <GiPapers /> Últimas provas
+                </MenuItem>
+              </SubMenu>
+              <SubMenu title="Policia Militar">
+                <MenuItem>
+                  
+                    {" "}
+                    <FaList /> Editais
+                </MenuItem>
+                <MenuItem>
+                  
+                    {" "}
+                    <BiBook /> Apostilas
+                </MenuItem>
+                <MenuItem>
+                  
+                    <GiPapers /> Últimas provas
+                </MenuItem>
+              </SubMenu>
+              <SubMenu title="Policia Civíl">
+                <MenuItem>
+                  
+                    {" "}
+                    <FaList /> Editais
+                </MenuItem>
+                <MenuItem>
+                  
+                    {" "}
+                    <BiBook /> Apostilas
+                </MenuItem>
+                <MenuItem>
+                  
+                    <GiPapers /> Últimas provas
+                </MenuItem>
+              </SubMenu> */}
             </Menu>
           </SidebarContent>
           {/* <SidebarFooter>
@@ -78,6 +216,13 @@ export default function ApresentationPage() {
           </SidebarFooter> */}
         </ProSidebar>
       </div>
+      {/* {currentContent === "apostilas-penal" ? (
+        <PoliciaPenalApostilas />
+      ) : currentContent === "editais-penal" ? (
+        <PoliciaPenalEditais />
+      ) : currentContent === "provas-penal" ? (
+        <PoliciaPenalProvas />
+      ) : undefined} */}
     </Container>
   );
 }
