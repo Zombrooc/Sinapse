@@ -69,7 +69,7 @@ export const TabContent = styled.div`
     justify-content: center;
   }
 
-  @media screen and (max-width: 768px ) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
   }
 
