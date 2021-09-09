@@ -101,6 +101,8 @@ export default function Home() {
           href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
         />
 
+        <meta name='dailymotion-domain-verification' content='dmqk2w84jnz51r8jr' />
+
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       </Head>
 
