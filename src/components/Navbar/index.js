@@ -1,10 +1,9 @@
-import React from "react";
-// import React, { useState, useEffect } from "react";
-// import { signIn, signOut, useSession } from "next-auth/client";
+import React, { useState, useEffect } from "react";
+import { signIn, signOut, useSession } from "next-auth/client";
 import Link from "next/link";
-// import { MdClose, MdMenu } from "react-icons/md";
+import { MdClose, MdMenu } from "react-icons/md";
 
-// import useWindowSize from "../useWindowSize.js";
+import useWindowSize from "../useWindowSize.js";
 
 // import synapseTinyLogo from '../../assets/images/Tiny_Logo_Sinapse__1_-removebg-preview.png';
 import synapseLogo from "../../assets/images/sinapseLogo.png";
@@ -16,27 +15,27 @@ import {
   Container,
   Title,
   ContactInfo,
-  // Menu,
-  // MenuItem,
-  // ToggleButton,
-  // CloseIcon,
+  Menu,
+  MenuItem,
+  ToggleButton,
+  CloseIcon,
 } from "./styles";
 
-function Navbar({hideContactInfo = false}) {
-  // const [menuStatus, setMenuStatus] = useState(false);
-  // const [session, loading] = useSession();
+function Navbar({ hideContactInfo = false }) {
+  const [menuStatus, setMenuStatus] = useState(false);
+  const [session, loading] = useSession();
 
-  // const size = useWindowSize();
+  const size = useWindowSize();
 
-  // const menuHandler = () => {
-  //   setMenuStatus(!menuStatus);
-  // };
+  const menuHandler = () => {
+    setMenuStatus(!menuStatus);
+  };
 
-  // useEffect(() => {
-  //   if (size.width >= 960) {
-  //     setMenuStatus(false);
-  //   }
-  // }, [size.width]);
+  useEffect(() => {
+    if (size.width >= 960) {
+      setMenuStatus(false);
+    }
+  }, [size.width]);
 
   return (
     <>
@@ -71,7 +70,7 @@ function Navbar({hideContactInfo = false}) {
               </a>
             </Link>
           </Title>
-          {/* <ToggleButton onClick={menuHandler}>
+          <ToggleButton onClick={menuHandler}>
             {!menuStatus && <MdMenu />}
           </ToggleButton>
           <Menu isOpen={menuStatus}>
@@ -81,11 +80,11 @@ function Navbar({hideContactInfo = false}) {
             {!session && (
               <>
                 <MenuItem>
-                    <a onClick={() => signIn()}>Entrar</a>
+                  <a onClick={() => signIn()}>Entrar</a>
                 </MenuItem>
                 <MenuItem>
                   <Link href="/auth/signup">
-                    <a>Cadastrar</a>
+                    <a className="active">Cadastrar</a>
                   </Link>
                 </MenuItem>
               </>
@@ -98,18 +97,11 @@ function Navbar({hideContactInfo = false}) {
                   </Link>
                 </MenuItem>
                 <MenuItem>
-                  <a onClick={() => signOut()}>
-                    Sair
-                  </a>
+                  <a onClick={() => signOut()}>Sair</a>
                 </MenuItem>
               </>
             )}
-            <MenuItem>
-              <Link href="/services/request-assistence">
-                <a className="active"><strong>Solicitar Assistêcia Técnica</strong></a>
-              </Link>
-            </MenuItem>
-          </Menu> */}
+          </Menu>
         </Container>
       </Nav>
     </>

@@ -36,12 +36,8 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   a {
-    //Remover esses elementos depois
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    color: var(--color-dark);
 
     img {
       margin: 0 !important;
@@ -50,7 +46,7 @@ export const Title = styled.div`
     }
   }
 
-  /* @media screen and (max-width: 961px) {
+  @media screen and (max-width: 961px) {
     width: 50%;
   }
 
@@ -58,7 +54,7 @@ export const Title = styled.div`
     img {
       width: 10rem;
     }
-  } */
+  }
 `;
 
 export const Menu = styled.div`
@@ -111,7 +107,7 @@ export const MenuItem = styled.div`
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    color: var(--color-light);
+    color: var(--color-dark);
     font-size: 0.8rem;
 
     &:hover:not(.active) {
