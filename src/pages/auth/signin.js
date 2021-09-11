@@ -82,7 +82,7 @@ export default function SignIn({ csrfToken, providers }) {
             <a>Registre-se</a>
           </Link>
         </div>
-        <br />
+        {/* <br />
         <hr style={{ width: "100%" }} />
         <br />
         {Object.values(providers)
@@ -106,7 +106,7 @@ export default function SignIn({ csrfToken, providers }) {
                 {provider.name}
               </button>
             </div>
-          ))}
+          ))} */}
       </CenterBox>
     </Container>
   );

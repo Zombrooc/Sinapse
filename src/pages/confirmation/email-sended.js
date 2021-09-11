@@ -6,9 +6,12 @@ import {
   CenterBox,
   Container,
 } from "../../styles/pages/confirmation/email-sended.styles";
-import { Router } from "next/router";
+import { Router, useRouter } from "next/router";
 
 export default function EmailSended() {
+
+  const router = useRouter();
+
   return (
     <Container>
       <Head>

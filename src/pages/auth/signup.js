@@ -51,7 +51,7 @@ export default function SignUp({ providers }) {
     event.preventDefault();
 
     const data = {
-      username: inputData.username || inputData.email.split('@')[0],
+      username: inputData.email.split('@')[0],
       email: inputData.email,
       password: inputData.password,
     }
@@ -149,7 +149,7 @@ export default function SignUp({ providers }) {
               <a>Entrar Agora</a>
             </Link>
           </div>
-          <br />
+          {/* <br />
           <hr style={{ width: "100%" }} />
           <br />
           {Object.values(providers)
@@ -169,7 +169,7 @@ export default function SignUp({ providers }) {
                   {provider.name}
                 </button>
               </div>
-            ))}
+            ))} */}
         </CenterBox>
       </Container>
     </>
