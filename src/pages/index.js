@@ -349,31 +349,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Paulo Victor Profile */}
-            <div className="blog-slider__item swiper-slide">
-              <div className="blog-slider__img">
-                <img src={pauloVictor} alt="" />
-              </div>
-              <div className="blog-slider__content">
-                <div className="blog-slider__title">
-                  Paulo Victor Quintiliano Barbosa
-                </div>
-                <span className="blog-slider__code">
-                  Graduando em Direito pela Universidade Vale do Rio Verde -
-                  UninCor, turma 2017/2021 &bull; Estagiário do Tribunal de
-                  Justiça de Minas Gerais
-                </span>
-                <div className="blog-slider__text">
-                  Nosso professor de Direitos Humanos e Legislação Especial é
-                  graduando em Direito pela Universidade Vale do Rio Verde -
-                  UninCor, atualmente do 10º período do curso. É estagiário do
-                  Tribunal de Justiça de Minas Gerais, lotado na 1ª Vara
-                  Criminal e da Infância e da Juventude de Três Corações. Já
-                  estagiou no Juizado Especial Cível e Criminal da mesma
-                  comarca.
-                </div>
-              </div>
-            </div>
           </div>
           <div className="blog-slider__pagination"></div>
         </div>
