@@ -153,7 +153,7 @@ export const MenuItem = styled.div`
 
 export const ToggleButton = styled.div`
   font-size: 35px;
-  color: var(--color-light) !important;
+  color: var(--color-dark) !important;
   display: flex;
   justify-content: flex-end;
   align-items: center;
