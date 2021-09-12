@@ -3,6 +3,8 @@ import Head from "next/head";
 import { useSession, getSession, signIn } from "next-auth/client";
 import { useRouter } from "next/router";
 
+import policeCareer from '../../assets/images/policeCareer.jpeg';
+
 import {
   CenterBox,
   Container,
@@ -16,21 +18,16 @@ export default function Dashboard() {
 
   if (session) {
     return (
-      <Container>
+      <Container style={{ backgroundImage: `url(${policeCareer})` }}>
         <Head>
           <title> Sinapse Dashboard </title>
         </Head>
 
         <CenterBox>
-          <div className="f-modal-alert">
-            <div className="f-modal-icon f-modal-warning scaleWarning">
-              <span className="f-modal-body pulseWarningIns"></span>
-              <span className="f-modal-dot pulseWarningIns"></span>
-            </div>
-          </div>
+          
           <p>
             {" "}
-            Essa página só deve ser renderizada quando usuário estiver logado.
+            Bem-vindo a sua Dashboard!! :)
           </p>
           <br />
           <button onClick={() => router.push("/")}>Voltar para o ínicio</button>

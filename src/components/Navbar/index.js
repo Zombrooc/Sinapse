@@ -45,7 +45,7 @@ function Navbar({ hideContactInfo = false }) {
           <p> Av. Sete de Setembro, 501 - Centro</p>
         </div>
         <div className="contactElement">
-          <p> Segunda a Sexta: 09:00 às 13:00 | 15:00 às 21:00</p>
+          <p> Segunda a Sexta: 09:00 às 13:00 | 15:00 às 23:00</p>
           <p> Sábado: 09:00 às 18:00</p>
         </div>
         <div className="socialMedias contactElement">
