@@ -10,6 +10,7 @@ import {
 import { Router } from "next/router";
 
 export default function AccountConfirmed({ confirmed }) {
+
   function Success() {
     return (
       <Container>
@@ -54,7 +55,7 @@ export default function AccountConfirmed({ confirmed }) {
           </p>
           <br />
           <button
-            onClick={() => signIn()}
+            onClick={() => Router.push('/auth/signin')}
             style={{ background: "var(--color-success)" }}
           >
             {" "}
