@@ -92,8 +92,8 @@ function Navbar({ hideContactInfo = false }) {
             {session && (
               <>
                 <MenuItem>
-                  <Link href="/">
-                    <a> {session.user.name}</a>
+                  <Link href="/dashboard">
+                    <a className="active">Área do Aluno</a>
                   </Link>
                 </MenuItem>
                 <MenuItem>
