@@ -80,13 +80,13 @@ function Navbar({ hideContactInfo = false }) {
             {!session && (
               <>
                 <MenuItem>
-                  <a onClick={() => signIn()}>Entrar</a>
+                  <a onClick={() => signIn()} className="active">Área do Aluno</a>
                 </MenuItem>
-                <MenuItem>
+                {/* <MenuItem>
                   <Link href="/auth/signup">
                     <a className="active">Cadastrar</a>
                   </Link>
-                </MenuItem>
+                </MenuItem> */}
               </>
             )}
             {session && (
