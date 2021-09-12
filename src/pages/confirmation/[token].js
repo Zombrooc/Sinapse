@@ -7,9 +7,11 @@ import {
   CenterBox,
   Container,
 } from "../../styles/pages/confirmation/account-confirmed.styles";
-import { Router } from "next/router";
+import Router, { useRouter } from "next/router";
 
 export default function AccountConfirmed({ confirmed }) {
+
+  const router = useRouter();
 
   function Success() {
     return (
@@ -55,7 +57,7 @@ export default function AccountConfirmed({ confirmed }) {
           </p>
           <br />
           <button
-            onClick={() => Router.push('/auth/signin')}
+            onClick={() => router.push('/auth/signin')}
             style={{ background: "var(--color-success)" }}
           >
             {" "}
