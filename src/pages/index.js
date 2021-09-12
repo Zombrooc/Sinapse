@@ -12,12 +12,10 @@ import policeCareer from "../assets/images/policeCareer.png";
 
 import soldier from "../assets/images/soldierPNG.png";
 import elianValdez from "../assets/images/contributorsProfilePics/elianValdez.jpg";
-// import joaoPedro from "../assets/images/contributorsProfilePics/joaoPedro.jpeg";
 import joaoPedro2 from "../assets/images/contributorsProfilePics/joaoPedro2.jpeg";
 import joseWilson from "../assets/images/contributorsProfilePics/joseWilson.jpeg";
 import marcusCarelli from "../assets/images/contributorsProfilePics/marcusCarelli.jpeg";
 import giovaniVictor from "../assets/images/contributorsProfilePics/giovaniVictor.jpeg";
-import pauloVictor from "../assets/images/contributorsProfilePics/pauloVictor.jpg";
 
 import {
   Container,
