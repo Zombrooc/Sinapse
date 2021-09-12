@@ -17,7 +17,7 @@ export default function AccountConfirmed({ confirmed }) {
     return (
       <Container>
         <Head>
-          <title> E-mail Confirmado - Synapse </title>
+          <title> E-mail Confirmado - Sinapse </title>
         </Head>
         <CenterBox>
           <div className="f-modal-alert">
@@ -72,7 +72,7 @@ export default function AccountConfirmed({ confirmed }) {
     return (
       <Container>
         <Head>
-          <title> Erro - Synapse </title>
+          <title> Erro - Sinapse </title>
         </Head>
         <CenterBox>
           <div className="f-modal-alert">

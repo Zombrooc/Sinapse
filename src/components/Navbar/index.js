@@ -5,8 +5,8 @@ import { MdClose, MdMenu } from "react-icons/md";
 
 import useWindowSize from "../useWindowSize.js";
 
-// import synapseTinyLogo from '../../assets/images/Tiny_Logo_Sinapse__1_-removebg-preview.png';
-import synapseLogo from "../../assets/images/sinapseLogo.png";
+// import sinapseTinyLogo from '../../assets/images/Tiny_Logo_Sinapse__1_-removebg-preview.png';
+import sinapseLogo from "../../assets/images/sinapseLogo.png";
 import facebookIcon from "../../assets/images/facebookIcon.png";
 import instagramIcon from "../../assets/images/instagramIcon.png";
 
@@ -66,7 +66,7 @@ function Navbar({ hideContactInfo = false }) {
           <Title>
             <Link href="/">
               <a>
-                <img src={synapseLogo} alt="Sinapse - Concursos" />
+                <img src={sinapseLogo} alt="Sinapse - Concursos" />
               </a>
             </Link>
           </Title>
@@ -80,7 +80,7 @@ function Navbar({ hideContactInfo = false }) {
             {!session && (
               <>
                 <MenuItem>
-                  <a onClick={() => signIn()} className="active">Área do Aluno</a>
+                  <a onClick={() => signIn()} className="active">Entrar</a>
                 </MenuItem>
                 {/* <MenuItem>
                   <Link href="/auth/signup">

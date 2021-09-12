@@ -1,21 +1,20 @@
 import React from "react";
 import Head from "next/head";
 import { getSession } from "next-auth/client";
+import { useRouter } from "next/router";
 
 import {
   CenterBox,
   Container,
 } from "../../styles/pages/confirmation/email-sended.styles";
-import { Router, useRouter } from "next/router";
 
 export default function EmailSended() {
-
   const router = useRouter();
 
   return (
     <Container>
       <Head>
-        <title> E-mail Enviado - Synapse </title>
+        <title> E-mail Enviado - Sinapse </title>
       </Head>
 
       <CenterBox>
@@ -34,7 +33,7 @@ export default function EmailSended() {
           O e-mail de confirmação já deve estar chegando, caso não apareça na
           Caixa de Entrada pedimos que verifique no Spam.
         </p>
-        <br/>
+        <br />
         <button onClick={() => router.push("/")}>Voltar para o ínicio</button>
       </CenterBox>
     </Container>
@@ -45,7 +44,12 @@ export const getServerSideProps = async ({ req }) => {
   const session = await getSession({ req });
 
   if (session) {
-    Router.push("/");
+    return {
+      redirect: {
+        permanent: false,
+        destination: "/",
+      },
+    };
   }
 
   return {

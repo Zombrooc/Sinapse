@@ -76,12 +76,12 @@ export default function SignIn({ csrfToken, providers }) {
           </label>
           <button type="submit">Entrar</button>
         </form>
-        <div className="signupOption">
+        {/* <div className="signupOption">
           Não tem uma conta?
           <Link href="/auth/signup">
             <a>Registre-se</a>
           </Link>
-        </div>
+        </div> */}
         {/* <br />
         <hr style={{ width: "100%" }} />
         <br />
