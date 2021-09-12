@@ -7,6 +7,8 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import Head from "next/head";
 import axios from "axios";
 
+import policeCareer from '../../assets/images/policeCareer.jpeg';
+
 import {
   Container,
   CenterBox,
@@ -74,7 +76,7 @@ export default function SignUp({ providers }) {
       <Head>
         <title>Criar conta - The Simple TECH</title>
       </Head>
-      <Container>
+      <Container style={{ backgroundImage: `url(${policeCareer})` }}>
         <div className="pushBack" onClick={() => router.push("/")}>
           <AiOutlineArrowLeft />    Voltar para o início
         </div>

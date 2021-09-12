@@ -48,7 +48,7 @@ const options = {
       },
     }),
   ],
-  database: "postgres://docker:docker@127.0.0.1:5432/mytestdb",
+  database: process.env.DATABASE_URL,
   session: {
     jwt: true,
   },
@@ -63,22 +63,22 @@ const options = {
       const isSignIn = user ? true : false;
 
       if (isSignIn) {
-        // if (account.provider) {
-        //   const response = await axios.get(
-        //     `${process.env.NEXT_PUBLIC_API_URL}/auth/${account.provider}/callback?access_token=${account?.accessToken}`
-        //   );
+        if (account.provider) {
+          const response = await axios.get(
+            `${process.env.NEXT_PUBLIC_API_URL}/auth/${account.provider}/callback?access_token=${account?.accessToken}`
+          );
 
-        //   const data = response.data;
+          const data = response.data;
 
-        //   token.jwt = data.jwt;
-        //   token.id = data.user.id;
-        // } else {
+          token.jwt = data.jwt;
+          token.id = data.user.id;
+        } else {
           token.id = user.user.id || user.id;
           token.accessToken = user.jwt;
           token.name = user.user.username || user.user.name;
           token.image = user.user.image || user.image || null;
           token.email = user.user.email;
-        // }
+        }
       }
 
       return Promise.resolve(token);
