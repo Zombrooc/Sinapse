@@ -2,14 +2,12 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import {
-  providers,
-  signIn,
-  getCsrfToken,
-  getSession,
-} from "next-auth/client";
+import { providers, signIn, getCsrfToken, getSession } from "next-auth/client";
 import { FcGoogle } from "react-icons/fc";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+
+import sinapseLogo from "../../assets/images/sinapseLogo.png";
+import policeCareer from "../../assets/images/policeCareer.jpeg";
 
 import {
   Container,
@@ -21,7 +19,7 @@ export default function SignIn({ csrfToken, providers }) {
   const router = useRouter();
 
   return (
-    <Container>
+    <Container style={{ backgroundImage: `url(${policeCareer})` }}>
       <Head>
         <title> Entrar - The Simple TECH</title>
       </Head>
@@ -32,7 +30,7 @@ export default function SignIn({ csrfToken, providers }) {
         <Title>
           <Link href="/">
             <a>
-              <p className="glitch">
+              {/* <p className="glitch">
                 The Simple <span>TECH</span>
               </p>
               <p className="glitch">
@@ -40,7 +38,13 @@ export default function SignIn({ csrfToken, providers }) {
               </p>
               <p className="glitch">
                 The Simple <span>TECH</span>
-              </p>
+              </p> */}
+
+              <img
+                src={sinapseLogo}
+                alt="Logo Sinapse Concursos"
+                style={{ width: "50%", textAlign: "center"}}
+              />
             </a>
           </Link>
         </Title>
@@ -113,11 +117,10 @@ export default function SignIn({ csrfToken, providers }) {
 }
 
 export async function getServerSideProps({ req }) {
-
   const session = await getSession({ req });
 
-  if (session){
-    router.push('/')
+  if (session) {
+    router.push("/");
   }
 
   return {

@@ -8,6 +8,11 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   div.pushBack {
     padding: 15px;
     position: absolute;
