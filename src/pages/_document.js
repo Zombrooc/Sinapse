@@ -93,38 +93,48 @@ export default class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="images/apple-touch-icon.png"
+            href="https://sinapse.thesimpletech.com.br/images/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="images/favicon-32x32.png"
+            href="https://sinapse.thesimpletech.com.br/images/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="194x194"
-            href="images/favicon-194x194.png"
+            href="https://sinapse.thesimpletech.com.br/images/favicon-194x194.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="192x192"
-            href="images/android-chrome-192x192.png"
+            href="https://sinapse.thesimpletech.com.br/images/android-chrome-192x192.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="images/favicon-16x16.png"
+            href="https://sinapse.thesimpletech.com.br/images/favicon-16x16.png"
           />
-          <link rel="manifest" href="/manifest.webmanifest" />
-          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff1d45" />
+          <link
+            rel="manifest"
+            href="https://sinapse.thesimpletech.com.br/manifest.webmanifest"
+          />
+          <link
+            rel="mask-icon"
+            href="https://sinapse.thesimpletech.com.br/safari-pinned-tab.svg"
+            color="#ff1d45"
+          />
           <meta name="apple-mobile-web-app-title" content="Sinapse Concursos" />
           <meta name="application-name" content="Sinapse Concursos" />
           <meta name="msapplication-TileColor" content="#b91d47" />
-          <meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
+          <meta
+            name="msapplication-TileImage"
+            content="https://sinapse.thesimpletech.com.br/images/mstile-144x144.png"
+          />
           <meta name="theme-color" content="#f0f0f0" />
 
           <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

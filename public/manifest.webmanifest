@@ -1,45 +1,44 @@
 {
-    "name": "Sinapse Concursos",
-    "short_name": "Sinapse Concursos",
-    "icons": [
-        {
-            "src": "images/android-chrome-36x36.png",
-            "sizes": "36x36",
-            "type": "image/png"
-        },
-        {
-            "src": "images/android-chrome-48x48.png",
-            "sizes": "48x48",
-            "type": "image/png"
-        },
-        {
-            "src": "images/android-chrome-72x72.png",
-            "sizes": "72x72",
-            "type": "image/png"
-        },
-        {
-            "src": "images/android-chrome-96x96.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        },
-        {
-            "src": "images/android-chrome-144x144.png",
-            "sizes": "144x144",
-            "type": "image/png"
-        },
-        {
-            "src": "images/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "images/android-chrome-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#f0f0f0",
-    "background_color": "#f0f0f0",
-    "start_url": "https://sinapse.thesimpletech.com.br/",
-    "display": "standalone"
+  "name": "Sinapse Concursos",
+  "short_name": "Sinapse Concursos",
+  "icons": [
+    {
+      "src": "https://sinapse.thesimpletech.com.br/images/android-chrome-36x36.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    },
+    {
+      "src": "https://sinapse.thesimpletech.com.br/images/android-chrome-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "https://sinapse.thesimpletech.com.br/images/android-chrome-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "https://sinapse.thesimpletech.com.br/images/android-chrome-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "https://sinapse.thesimpletech.com.br/images/android-chrome-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://sinapse.thesimpletech.com.br/images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://sinapse.thesimpletech.com.br/images/android-chrome-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#f0f0f0",
+  "background_color": "#f0f0f0",
+  "display": "standalone"
 }
