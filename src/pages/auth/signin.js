@@ -120,7 +120,13 @@ export async function getServerSideProps({ req }) {
   const session = await getSession({ req });
 
   if (session) {
-    router.push("/");
+
+    return {
+      redirect: {
+        permanent: false,
+        destination: "/",
+      },
+    };
   }
 
   return {

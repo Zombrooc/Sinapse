@@ -102,7 +102,12 @@ export const getServerSideProps = async (context) => {
   const session = await getSession({ req });
 
   if (session){
-    Router.push('/')
+    return {
+      redirect: {
+        permanent: false,
+        destination: "/",
+      },
+    };
   }
 
   const token = params.token;
