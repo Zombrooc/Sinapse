@@ -15,7 +15,6 @@ import elianValdez from "../assets/images/contributorsProfilePics/elianValdez.jp
 import joaoPedro2 from "../assets/images/contributorsProfilePics/joaoPedro2.jpeg";
 import joseWilson from "../assets/images/contributorsProfilePics/joseWilson.jpeg";
 import marcusCarelli from "../assets/images/contributorsProfilePics/marcusCarelli.jpeg";
-import giovaniVictor from "../assets/images/contributorsProfilePics/giovaniVictor.jpeg";
 
 import {
   Container,
@@ -99,7 +98,10 @@ export default function Home() {
           href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
         />
 
-        <meta name='dailymotion-domain-verification' content='dmqk2w84jnz51r8jr' />
+        <meta
+          name="dailymotion-domain-verification"
+          content="dmqk2w84jnz51r8jr"
+        />
 
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       </Head>
@@ -322,7 +324,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Giovani Profile */}
+            {/* Giovani Profile
             <div className="blog-slider__item swiper-slide">
               <div className="blog-slider__img">
                 <img src={giovaniVictor} alt="" />
@@ -346,7 +348,7 @@ export default function Home() {
                   de Minas Gerais.
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="blog-slider__pagination"></div>
         </div>
