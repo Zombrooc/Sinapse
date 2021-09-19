@@ -1,9 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { SWRConfig } from "swr";
 import { useSession, signIn } from "next-auth/client";
-import { useRouter } from "next/router";
 
 import { useFetch } from "../../config/api";
 

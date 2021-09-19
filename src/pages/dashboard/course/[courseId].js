@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Link from "next/link";
-import { useSession, getSession, signIn } from "next-auth/client";
+import { useSession, signIn } from "next-auth/client";
 import {
   Button,
   Card,
@@ -18,7 +16,7 @@ import {
 import "bootstrap/dist/css/bootstrap.css";
 
 import Navbar from "../../../components/Navbar";
-import Loading from '../../../components/Loading';
+import Loading from "../../../components/Loading";
 
 import { useFetch } from "../../../config/api";
 
@@ -43,14 +41,16 @@ const Course = () => {
           <title> Sinapse - {data.title} </title>
         </Head>
         <Navbar hideContactInfo />
-        <br/><br/><br/>
+        <br />
+        <br />
+        <br />
         <Container>
           <h1> {data.title}</h1>
           <Row>
             <Col className=" ml-auto" md="12">
               <div className=" accordion my-3" id="accordionExample">
                 {data.Curriculum.map((curriculum) => {
-                  if (curriculum.__component === 'curriculum.lecture') {
+                  if (curriculum.__component === "curriculum.lecture") {
                     return (
                       <Card key={curriculum.id}>
                         <CardHeader
