@@ -2,9 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background: var(--color-light);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--color-dark);
 
   a {

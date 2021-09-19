@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   background: var(--color-light);
   display: flex;
 
-  z-index: 4444;
+  z-index: 9999;
 
   /* padding: 0.5rem 7rem; */
 
@@ -61,6 +61,7 @@ export const Menu = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 4444;
 
   @media screen and (max-width: 960px) {
     display: flex;

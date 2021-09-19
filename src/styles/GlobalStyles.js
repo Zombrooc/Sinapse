@@ -131,7 +131,7 @@ export default createGlobalStyle`
         }
       }
 
-  button {
+  /* button {
     display: block;
     background: var(--color-dark);
     color: var(--color-light);
@@ -143,11 +143,11 @@ export default createGlobalStyle`
     font-weight: bold;
     font-size: 15px;
     transition: background-color 0.2s;
-  }
+  } */
 
-  button:hover {
+  /* button:hover {
     background-color: #2e2e2e;
-  }
+  } */
 
   .height-100vh {
     height: 100vh;
