@@ -8,7 +8,7 @@ import { useFetch } from "../../config/api";
 import Navbar from "../../components/Navbar";
 import Loading from "../../components/Loading";
 
-import Workout from "../../assets/images/workout.jpg";
+import policeCareer from "../../assets/images/policeCareer.jpeg";
 
 import {
   Container,
@@ -49,7 +49,7 @@ export default function Dashboard() {
             );
           })}
         </Container> */}
-        <Container>
+        <Container style={{background: `url(${policeCareer.jpeg})`}}>
           <div className="grid">
             {data.map((course) => {
               return (
