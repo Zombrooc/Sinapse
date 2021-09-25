@@ -49,7 +49,7 @@ export default function Dashboard() {
             );
           })}
         </Container> */}
-        <Container style={{background: `url(${policeCareer.jpeg})`}}>
+        <Container style={{background: `url(${policeCareer})`}}>
           <div className="grid">
             {data.map((course) => {
               return (
