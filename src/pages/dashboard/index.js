@@ -6,10 +6,16 @@ import { useSession, signIn } from "next-auth/client";
 import { useFetch } from "../../config/api";
 
 import Navbar from "../../components/Navbar";
-import Loading from '../../components/Loading';
+import Loading from "../../components/Loading";
+
+import Workout from "../../assets/images/workout.jpg";
 
 import {
   Container,
+  Card,
+  CardTitle,
+  CardBody,
+  CardButton,
 } from "../../styles/pages/dashboard/index.styles";
 
 export default function Dashboard() {
@@ -30,7 +36,7 @@ export default function Dashboard() {
           <title> Sinapse Dashboard </title>
         </Head>
         <Navbar hideContactInfo />
-        <Container>
+        {/* <Container>
           {data.map((course) => {
             return (
               <Link href={`/dashboard/course/${course.id}`}>
@@ -42,6 +48,26 @@ export default function Dashboard() {
               </Link>
             );
           })}
+        </Container> */}
+        <Container>
+          <div className="grid">
+            {data.map((course) => {
+              return (
+                <Card>
+                  <img src={`${course.cover.url}`} />
+                  <CardTitle> {course.title} </CardTitle>
+                  <CardBody>
+                    <p style={{ marginTop: "8px" }}>{course.description}</p>
+                  </CardBody>
+                  <Link href={`/dashboard/course/${course.id}`}>
+                    <a>
+                      <CardButton>Acessar curso</CardButton>
+                    </a>
+                  </Link>
+                </Card>
+              );
+            })}
+          </div>
         </Container>
       </>
     );
