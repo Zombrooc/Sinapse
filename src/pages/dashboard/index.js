@@ -8,7 +8,7 @@ import { useFetch } from "../../config/api";
 import Navbar from "../../components/Navbar";
 import Loading from "../../components/Loading";
 
-import policeCareer from "../../assets/images/policeCareer.jpeg";
+import policeCareer from "../../assets/images/policeCareer_2.jpeg";
 
 import {
   Container,
