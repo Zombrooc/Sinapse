@@ -14,7 +14,7 @@ import soldier from "../assets/images/soldierPNG.png";
 import elianValdez from "../assets/images/contributorsProfilePics/elianValdez.jpg";
 import joaoPedro2 from "../assets/images/contributorsProfilePics/joaoPedro2.jpeg";
 import joseWilson from "../assets/images/contributorsProfilePics/joseWilson.jpeg";
-import marcusCarelli from "../assets/images/contributorsProfilePics/marcusCarelli.jpeg";
+import isabellaCaroline from '../assets/images/contributorsProfilePics/isabellaCaroline.jpeg';
 
 import {
   Container,
