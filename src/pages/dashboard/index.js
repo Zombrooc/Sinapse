@@ -8,8 +8,6 @@ import { useFetch } from "../../config/api";
 import Navbar from "../../components/Navbar";
 import Loading from "../../components/Loading";
 
-import policeCareer from "../../assets/images/policeCareer_2.jpeg";
-
 import {
   Container,
   Card,
@@ -49,7 +47,7 @@ export default function Dashboard() {
             );
           })}
         </Container> */}
-        <Container style={{backgroundImage: `url(${policeCareer})`}}>
+        <Container >
           <div className="grid">
             {data.map((course) => {
               return (

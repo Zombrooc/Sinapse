@@ -36,13 +36,12 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   a {
-    
     color: var(--color-dark);
 
     img {
       margin: 0 !important;
 
-      width: 20%;
+      width: 15%;
     }
   }
 

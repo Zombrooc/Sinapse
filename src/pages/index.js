@@ -301,26 +301,25 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Marcus Carelli Profile */}
+            {/* Isabella Caroline Profile */}
             <div className="blog-slider__item swiper-slide">
               <div className="blog-slider__img">
-                <img src={marcusCarelli} alt="" />
+                <img src={isabellaCaroline} alt="" />
               </div>
               <div className="blog-slider__content">
-                <div className="blog-slider__title">Marcus Carelli</div>
+                <div className="blog-slider__title">Isabella Caroline</div>
                 <span className="blog-slider__code">
-                  Formado pela faculdade de direito de Varginha &bull;
-                  Especialista em Direito Processual Geral &bull; Aprovado no
-                  concurso de analista judiciário e técnico judiciário do TJPA
-                  2020 &bull; Aprovado técnico judiciário/conciliador TJRS 2013
+                  Bacharel em Ciências Contabeis (UNIS) &bull; Pós Graduada em
+                  Docência do Ensino Superior (UNIS) &bull; Cursei o Programa de
+                  Iniciação Científica Junior da OBMEP por 4 anos
                 </span>
                 <div className="blog-slider__text">
-                  Nosso professor de Direito Penal - Parte Geral é Natural de
-                  Feira de Santana-BA e Advogado há quase uma década. Possui
-                  vários artigos científicos publicados, inclusive no núcleo de
-                  mestrado e doutorado da Universidade Federal de Santa
-                  Catarina. Sócio Proprietário do escritório CM-Advogados com
-                  atuação nos Tribunais de MG,SP,PR e SC.
+                  22 anos, trabalho na empresa Evolução Contabilidade e há
+                  alguns anos começou a dar aulas particulares de matemática. Em
+                  2020 criou a marca Bella Matemática, na qual vem apresentando
+                  seu trabalho pelo Instagram afim de contribuir com o
+                  conhecimento dos estudantes e mostrar que a matemática pode
+                  ser mais fácil do que se imagina.
                 </div>
               </div>
             </div>

@@ -82,11 +82,6 @@ function Navbar({ hideContactInfo = false }) {
                 <MenuItem>
                   <a onClick={() => signIn()} className="active">Entrar</a>
                 </MenuItem>
-                {/* <MenuItem>
-                  <Link href="/auth/signup">
-                    <a className="active">Cadastrar</a>
-                  </Link>
-                </MenuItem> */}
               </>
             )}
             {session && (
