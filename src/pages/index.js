@@ -314,7 +314,7 @@ export default function Home() {
                   Iniciação Científica Junior da OBMEP por 4 anos
                 </span>
                 <div className="blog-slider__text">
-                  22 anos, trabalho na empresa Evolução Contabilidade e há
+                  22 anos, trabalha na empresa Evolução Contabilidade e há
                   alguns anos começou a dar aulas particulares de matemática. Em
                   2020 criou a marca Bella Matemática, na qual vem apresentando
                   seu trabalho pelo Instagram afim de contribuir com o
