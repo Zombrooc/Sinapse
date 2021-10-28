@@ -47,16 +47,18 @@ export default function Dashboard() {
             );
           })}
         </Container> */}
-        <Container >
+        <Container>
           <div className="grid">
             {data.map((course) => {
               return (
-                <Card>
+                <Card key={course.id}>
                   <img src={`${course.cover.url}`} />
                   <CardTitle> {course.title} </CardTitle>
-                  <CardBody>
-                    <p style={{ marginTop: "8px" }}>{course.description}</p>
-                  </CardBody>
+                  {course.description ? (
+                    <CardBody>
+                      <p style={{ marginTop: "8px" }}>{course.description}</p>
+                    </CardBody>
+                  ) : null}
                   <Link href={`/dashboard/course/${course.id}`}>
                     <a>
                       <CardButton>Acessar curso</CardButton>

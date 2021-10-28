@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@next-auth/typeorm-legacy-adapter": "^0.1.4",
+    "@react-pdf/renderer": "^2.0.20",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta3",
     "mongodb": "^4.1.1",
@@ -23,6 +24,7 @@
     "react-dom": "17.0.2",
     "react-headless-tabs": "^3.0.2",
     "react-icons": "^4.2.0",
+    "react-pdf": "^5.5.0",
     "react-pro-sidebar": "^0.6.0",
     "reactstrap": "^8.10.0",
     "safe-json-stringify": "^1.2.0",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { useSession, signIn } from "next-auth/client";
@@ -17,6 +17,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import Navbar from "../../../components/Navbar";
 import Loading from "../../../components/Loading";
+import SinglePagePDFViewer from "../../../components/pdf/SinglePage";
 
 import { useFetch } from "../../../config/api";
 
@@ -24,7 +25,7 @@ const Course = () => {
   const router = useRouter();
   const { courseId } = router.query;
   const [session, loading] = useSession();
-  const [openedCollapse, setOpenedCollapse] = React.useState("");
+  const [openedCollapse, setOpenedCollapse] = useState("");
 
   const { data } = useFetch(`courses/${courseId}`);
 
@@ -44,7 +45,34 @@ const Course = () => {
         <br />
         <br />
         <br />
-        <Container>
+
+        {data.Curriculum.map((item) => {
+          if (item.__component === "curriculum.exercises") {
+            return (
+              <div key={item.id}>
+                <h1> Exercícios </h1>
+                <div>
+                  <div>
+                    <h3> {item.title} </h3>
+                    {item.files.map((file) => {
+                      return (
+                        // <div key={file.id}>
+                        //   <div className="all-page-container">
+                        //     <AllPagesPDFViewer pdf={file.url} />
+                        //   </div>
+                        // </div>
+                        <SinglePagePDFViewer pdf={file.url} key={file.id}/>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            );
+          } else {
+            ("");
+          }
+        })}
+        {/* <Container>
           <h1> {data.title}</h1>
           <Row>
             <Col className=" ml-auto" md="12">
@@ -93,7 +121,7 @@ const Course = () => {
               </div>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </>
     );
   } else {
