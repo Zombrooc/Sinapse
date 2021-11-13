@@ -2,22 +2,12 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { useSession, signIn } from "next-auth/client";
-import {
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  Collapse,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
 
 import "bootstrap/dist/css/bootstrap.css";
 
 import Navbar from "../../../components/Navbar";
 import Loading from "../../../components/Loading";
-import SinglePagePDFViewer from "../../../components/pdf/SinglePage";
+import PDFViewer from "../../../components/PDFViewer";
 
 import { useFetch } from "../../../config/api";
 
@@ -35,6 +25,8 @@ const Course = () => {
 
   if (typeof window !== "undefined" && loading) return null;
 
+  console.log(data);
+
   if (session) {
     return (
       <>
@@ -47,30 +39,48 @@ const Course = () => {
         <br />
 
         {data.Curriculum.map((item) => {
-          if (item.__component === "curriculum.exercises") {
-            return (
-              <div key={item.id}>
-                <h1> Exercícios </h1>
-                <div>
-                  <div>
-                    <h3> {item.title} </h3>
-                    {item.files.map((file) => {
-                      return (
-                        // <div key={file.id}>
-                        //   <div className="all-page-container">
-                        //     <AllPagesPDFViewer pdf={file.url} />
-                        //   </div>
-                        // </div>
-                        <SinglePagePDFViewer pdf={file.url} key={file.id}/>
-                      );
-                    })}
-                  </div>
-                </div>
+          console.log(item);
+
+          return (
+            <>
+              <div>
+                <h1>{item.title}</h1>
               </div>
-            );
-          } else {
-            ("");
-          }
+            </>
+          )
+          // if (item.__component === "curriculum.schollSbuject") {
+          //   return (
+          //     <div key={item.id}>
+          //       <h1 style={{ marginLeft: "40px" }}> Exercícios </h1>
+          //       <div>
+          //         <div>
+          //           <p
+          //             style={{
+          //               marginLeft: "40px",
+          //               fontSize: "12px",
+          //               marginTop: '-10px',
+          //             }}
+          //           >
+          //             {" "}
+          //             {item.title}{" "}
+          //           </p>
+          //           {item.files.map((file) => {
+          //             return (
+          //               // <div key={file.id}>
+          //               //   <div className="all-page-container">
+          //               //     <AllPagesPDFViewer pdf={file.url} />
+          //               //   </div>
+          //               // </div>
+          //               <PDFViewer pdfURL={file.url} key={file.id} />
+          //             );
+          //           })}
+          //         </div>
+          //       </div>
+          //     </div>
+          //   );
+          // } else {
+          //   ("");
+          // }
         })}
         {/* <Container>
           <h1> {data.title}</h1>
