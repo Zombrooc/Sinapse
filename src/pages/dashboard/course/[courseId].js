@@ -41,48 +41,48 @@ const Course = () => {
         {data.Curriculum.map((item) => {
           console.log(item);
 
-          return (
-            <>
-              <div>
-                <h1>{item.title}</h1>
-              </div>
-            </>
-          )
-          // if (item.__component === "curriculum.schollSbuject") {
-          //   return (
-          //     <div key={item.id}>
-          //       <h1 style={{ marginLeft: "40px" }}> Exercícios </h1>
-          //       <div>
-          //         <div>
-          //           <p
-          //             style={{
-          //               marginLeft: "40px",
-          //               fontSize: "12px",
-          //               marginTop: '-10px',
-          //             }}
-          //           >
-          //             {" "}
-          //             {item.title}{" "}
-          //           </p>
-          //           {item.files.map((file) => {
-          //             return (
-          //               // <div key={file.id}>
-          //               //   <div className="all-page-container">
-          //               //     <AllPagesPDFViewer pdf={file.url} />
-          //               //   </div>
-          //               // </div>
-          //               <PDFViewer pdfURL={file.url} key={file.id} />
-          //             );
-          //           })}
-          //         </div>
-          //       </div>
+          // return (
+          //   <>
+          //     <div>
+          //       <h1>{item.title}</h1>
           //     </div>
-          //   );
-          // } else {
-          //   ("");
-          // }
+          //   </>
+          // )
+          if (item.__component === "curriculum.school-subject") {
+            return (
+              <div key={item.id}>
+                <h1 style={{ marginLeft: "40px" }}> Exercícios </h1>
+                <div>
+                  <div>
+                    <p
+                      style={{
+                        marginLeft: "40px",
+                        fontSize: "12px",
+                        marginTop: '-10px',
+                      }}
+                    >
+                      {" "}
+                      {item.title}{" "}
+                    </p>
+                    {item.files.map((file) => {
+                      return (
+                        // <div key={file.id}>
+                        //   <div className="all-page-container">
+                        //     <AllPagesPDFViewer pdf={file.url} />
+                        //   </div>
+                        // </div>
+                        <PDFViewer pdfURL={file.url} key={file.id} />
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            );
+          } else {
+            ("");
+          }
         })}
-        {/* <Container>
+        <Container>
           <h1> {data.title}</h1>
           <Row>
             <Col className=" ml-auto" md="12">
@@ -131,7 +131,7 @@ const Course = () => {
               </div>
             </Col>
           </Row>
-        </Container> */}
+        </Container>
       </>
     );
   } else {
