@@ -25,8 +25,6 @@ const Course = () => {
 
   if (typeof window !== "undefined" && loading) return null;
 
-  console.log(data);
-
   if (session) {
     return (
       <>
@@ -38,7 +36,13 @@ const Course = () => {
         <br />
         <br />
 
-        {data.Curriculum.map((item) => {
+        {/* {
+          data.lecture.map(item => {
+            console.log(item);
+          })
+        } */}
+
+        {/* {data.lecture.map((item) => {
           console.log(item);
 
           // return (
@@ -131,7 +135,7 @@ const Course = () => {
               </div>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </>
     );
   } else {

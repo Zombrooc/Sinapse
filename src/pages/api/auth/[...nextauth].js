@@ -22,6 +22,7 @@ const options = {
         password: { label: "Password", type: "password" },
       },
       authorize: async (credentials) => {
+        console.log(credentials);
         try {
           const user = async (credentials) => {
             const response = await axios.post(
@@ -31,7 +32,6 @@ const options = {
                 password: credentials.password,
               }
             );
-
             return response.data;
           };
 
@@ -63,22 +63,22 @@ const options = {
       const isSignIn = user ? true : false;
 
       if (isSignIn) {
-        if (account.provider) {
-          const response = await axios.get(
-            `${process.env.NEXT_PUBLIC_API_URL}/auth/${account.provider}/callback?access_token=${account?.accessToken}`
-          );
+      //   if (account.provider) {
+      //     const response = await axios.get(
+      //       `${process.env.NEXT_PUBLIC_API_URL}/auth/${account.provider}/callback?access_token=${account?.accessToken}`
+      //     );
 
-          const data = response.data;
+      //     const data = response.data;
 
-          token.jwt = data.jwt;
-          token.id = data.user.id;
-        } else {
+      //     token.jwt = data.jwt;
+      //     token.id = data.user.id;
+      //   } else {
           token.id = user.user.id || user.id;
           token.accessToken = user.jwt;
           token.name = user.user.username || user.user.name;
           token.image = user.user.image || user.image || null;
           token.email = user.user.email;
-        }
+      //   }
       }
 
       return Promise.resolve(token);

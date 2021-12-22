@@ -15,7 +15,7 @@ import {
   Title,
 } from "../../styles/pages/auth/signin.styles";
 
-export default function SignIn({ csrfToken, providers }) {
+export default function SignIn({ csrfToken }) {
   const router = useRouter();
 
   return (
@@ -72,7 +72,7 @@ export default function SignIn({ csrfToken, providers }) {
           <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
           <label>
             E-mail
-            <input name="email" type="email" required />
+            <input name="email" type="email" required/>
           </label>
           <label>
             Senha
@@ -80,13 +80,13 @@ export default function SignIn({ csrfToken, providers }) {
           </label>
           <button type="submit">Entrar</button>
         </form>
-        {/* <div className="signupOption">
+        <div className="signupOption">
           Não tem uma conta?
           <Link href="/auth/signup">
             <a>Registre-se</a>
           </Link>
-        </div> */}
-        {/* <br />
+        </div>
+        <br />
         <hr style={{ width: "100%" }} />
         <br />
         {Object.values(providers)
@@ -110,14 +110,14 @@ export default function SignIn({ csrfToken, providers }) {
                 {provider.name}
               </button>
             </div>
-          ))} */}
+          ))}
       </CenterBox>
     </Container>
   );
 }
 
-export async function getServerSideProps({ req }) {
-  const session = await getSession({ req });
+export async function getServerSideProps(ctx) {
+  const session = await getSession(ctx);
 
   if (session) {
 
@@ -131,8 +131,8 @@ export async function getServerSideProps({ req }) {
 
   return {
     props: {
-      csrfToken: await getCsrfToken({ req }),
-      providers: await providers(),
+      csrfToken: session,
+      // providers: await providers(),
     },
   };
 }
